@@ -31,6 +31,7 @@ import pandas as pd
 import numpy as np
 import math
 from copy import deepcopy
+from itertools import cycle
 
 ## This is the reqId IB API sends when a fill is received
 FILL_CODE=-1
@@ -686,25 +687,28 @@ class TestClient(EClient):
 
         open_orders_dict = self.get_open_orders()
 
-        a = []
-        for key, value in open_orders_dict.items():
-            a.append(value.__dict__)
-        b = pd.DataFrame(a)
+        if open_orders_dict:
+            a = []
+            for key, value in open_orders_dict.items():
+                a.append(value.__dict__)
+            b = pd.DataFrame(a)
 
-        c = []
-        for i, row in b.iterrows():
-            c.append(row.contract.__dict__)
-        d = pd.DataFrame(c)
+            c = []
+            for i, row in b.iterrows():
+                c.append(row.contract.__dict__)
+            d = pd.DataFrame(c)
 
-        e = pd.concat([b,d], axis=1)
-        e.drop('contract', axis=1, inplace=True)
+            e = pd.concat([b,d], axis=1)
+            e.drop('contract', axis=1, inplace=True)
 
-        f = []
-        for i, row in e.iterrows():
-            f.append(row.order.__dict__)
-        g = pd.DataFrame(f)
-        open_orders_pd = pd.concat([e,g], axis=1)
-        open_orders_pd.drop('order', axis=1, inplace=True)
+            f = []
+            for i, row in e.iterrows():
+                f.append(row.order.__dict__)
+            g = pd.DataFrame(f)
+            open_orders_pd = pd.concat([e,g], axis=1)
+            open_orders_pd.drop('order', axis=1, inplace=True)
+        else:
+            open_orders_pd = pd.DataFrame(columns=[0])
 
         return open_orders_pd
 
@@ -859,15 +863,15 @@ class TestClient(EClient):
 
         ## return nothing
     
-    def cancel_open_buy_orders(self):
+    def cancel_all_open_buy_orders(self):
     
         # Cancel all outstanding buy orders
         open_orders = self.get_open_orders_pd()
         for _, order in open_orders.iterrows():
-            if order.order.action == "BUY":
+            if order.action == "BUY":
                 print("Cancelling this order: {}".format(order))
-                print(order.order.orderId)
-                self.cancel_order(order.order.orderId)
+                print(order.orderId)
+                self.cancel_order(order.orderId)
 
     def get_current_positions(self):
         """
@@ -1085,7 +1089,7 @@ class TestApp(TestWrapper, TestClient):
             order_pd = None
         return order_pd
 
-    def get_executions_and_commissions_df(self):
+    def get_executions_and_commissions_pd(self):
 
         # Create DataFrame from get_executions_and_commissions method
         # Returns a pandas DataFrame of last 24 hours of executions. If none, returns empty DataFrame
@@ -1115,8 +1119,16 @@ class TestApp(TestWrapper, TestClient):
             h = pd.concat([e, g], axis=1)
             
             # Take out the Contract object column - it is now redundant
-            executions_pd = h.drop(['contract'], axis=1)
-            
+            i = h.drop(['contract'], axis=1)
+
+            # Convert time in to datettime object
+            l = {}
+            for j, row in i.iterrows():
+                l[j] = datetime.datetime.strptime(row.time, '%Y%m%d  %H:%M:%S')
+            k = pd.Series(l, index=l.keys(), name='dttime')
+
+            executions_pd = pd.concat([i, k], axis=1)
+
             return executions_pd
         else:
             return pd.DataFrame(columns=[0])
@@ -1125,7 +1137,7 @@ class TestApp(TestWrapper, TestClient):
     
         # Loads the latest executions and returns the entire updated executions DataFrame
         # Saves the latest update to pickle file
-        executions_pd_new = self.get_executions_and_commissions_df()
+        executions_pd_new = self.get_executions_and_commissions_pd()
 
         # Check if any new executions were received
         if not executions_pd_new.empty:
@@ -1156,6 +1168,37 @@ class TestApp(TestWrapper, TestClient):
             return latest_buy_time
             
         return None
+
+    def generate_stock_shortlist(self):
+
+        # Return list of stocks to trade for the day
+        self.stock_list = list(pd.read_csv(self.csvAddress_stocks_to_trade).Stocks)
+        self.nextStock = cycle(self.stock_list)
+
+    def create_resolved_ibcontract(self, stock_to_trade):
+        # Create the contract object
+        ibcontract = IBcontract()
+        ibcontract.secType = "STK"
+        ibcontract.symbol = stock_to_trade
+        ibcontract.currency = "USD"
+        resolved_ibcontract = self.resolve_ib_contract(ibcontract)
+        print(resolved_ibcontract)
+
+        # TODO: Investigate that we are getting the right stock out of all of the options
+        return resolved_ibcontract
+    
+    def get_latest_price(self, resolved_ibcontract):
+    
+        # Get the last price
+        tickerid = self.start_getting_IB_market_data(resolved_ibcontract)
+        time.sleep(1)
+        market_data1 = self.stop_getting_IB_market_data(tickerid)
+        market_data1_as_df = market_data1.as_pdDataFrame()
+        some_quotes = market_data1_as_df.resample("1S").last()[["last_trade_price"]]
+        current_price = some_quotes.iloc[0][0]
+        print('Current price: {}'.format(current_price))
+        
+        return current_price
 
 class finishableQueue(object):
     """
