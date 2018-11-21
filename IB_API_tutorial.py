@@ -28,6 +28,7 @@ import queue
 import datetime
 import time
 import pandas as pd
+from pandas.tseries.offsets import BDay
 import numpy as np
 import math
 from copy import deepcopy
@@ -611,7 +612,6 @@ class TestClient(EClient):
 
         ## We can eithier supply our own ID or ask IB to give us the next valid one
         if orderid is None:
-            print("Getting orderid from IB")
             orderid = self.get_next_brokerorderid()
 
             if orderid is TIME_OUT:
@@ -705,8 +705,13 @@ class TestClient(EClient):
             for i, row in e.iterrows():
                 f.append(row.order.__dict__)
             g = pd.DataFrame(f)
-            open_orders_pd = pd.concat([e,g], axis=1)
-            open_orders_pd.drop('order', axis=1, inplace=True)
+            h = pd.concat([e,g], axis=1)
+            h.drop('order', axis=1, inplace=True)
+
+            # Join the time_added column to the open_orders DataFrame
+            logged_orders = pd.read_pickle(self.pklAdd_orders)
+            i = logged_orders.loc[:,['permId', 'time_added']]
+            open_orders_pd = h.join(i.set_index('permId'), on='permId')
         else:
             open_orders_pd = pd.DataFrame(columns=[0])
 
@@ -862,16 +867,6 @@ class TestClient(EClient):
                 finished = True
 
         ## return nothing
-    
-    def cancel_all_open_buy_orders(self):
-    
-        # Cancel all outstanding buy orders
-        open_orders = self.get_open_orders_pd()
-        for _, order in open_orders.iterrows():
-            if order.action == "BUY":
-                print("Cancelling this order: {}".format(order))
-                print(order.orderId)
-                self.cancel_order(order.orderId)
 
     def get_current_positions(self):
         """
@@ -1053,41 +1048,31 @@ class TestApp(TestWrapper, TestClient):
         currOrder.lmtPrice = price
         currOrder.tif = tif
         currOrder.transmit = True
-        print("App is connected?: {}".format(self.isConnected()))
         currOrderId = self.place_new_IB_order(resolved_ibcontract, currOrder, orderid=orderid)
         print("Placed order, orderid is %d" % currOrderId)
         
         return currOrderId
 
     # Logging order entry
-    def add_order_entry(self, orderid, pklAdd_orders, csvAddress_orders):
+    def add_order_entry(self, orderid):
         # Add a new log entry (somewhere, either CSV, cloud database, etc.) keeping track of all order detail
         
         # Get open orders
-        open_orders = self.get_open_orders()
-        order_attributes = ['contract','order','orderstate','status',
-                    'filled', 'avgFillPrice', 'permid',
-                    'parentId', 'lastFillPrice', 'clientId', 'whyHeld',
-                    'mktCapPrice']
-        attributes = {}
-        order_pd_base = pd.read_pickle(pklAdd_orders)
-        if orderid in open_orders:
-            orderInformation = open_orders[orderid]
-            for attr in order_attributes:
-                attributes[attr] = getattr(orderInformation, attr)
-            order_pd_new = pd.DataFrame(attributes, index=[0])
-            order_pd_new = order_pd_new.assign(time_added=datetime.datetime.now())
-            columns = order_pd_new.columns
-            order_pd = pd.concat([order_pd_base, order_pd_new])
-            order_pd = order_pd[columns]
-            
+        open_orders = self.get_open_orders_pd()
+        
+        if open_orders.id.isin([orderid]).any():
+            order_pd_base = pd.read_pickle(self.pklAdd_orders)
+            a = open_orders[open_orders.id == orderid]
+
+            b = a.assign(time_added=datetime.datetime.now())
+            order_pd = pd.concat([order_pd_base, b])
+            order_pd.drop_duplicates(subset=['permid','conId'], inplace=True)
+            order_pd.reset_index(drop=True, inplace=True)
+
             # Save latest stData to pickle file and csv locally
-            order_pd.to_pickle(pklAdd_orders)
-            order_pd.to_csv(csvAddress_orders)
+            order_pd.to_pickle(self.pklAdd_orders)
         else:
             print("Orderid {} not in open_orders".format(orderid))
-            order_pd = None
-        return order_pd
 
     def get_executions_and_commissions_pd(self):
 
@@ -1199,6 +1184,99 @@ class TestApp(TestWrapper, TestClient):
         print('Current price: {}'.format(current_price))
         
         return current_price
+    
+    def rebalance_sell_order(self, position_series):
+
+        # Receive positions Series from output of get_current_positions()
+        
+        StockShares = position_series.position
+        
+        # We have to re-resolve the contract based on the quote. Some risk in not identifying the same security. For some reason the saved Contract object in our positions DataFrame does not square up exactly with their resolved contract.
+        resolved_ibcontract = self.create_resolved_ibcontract(position_series.symbol)
+        CurrPrice = self.get_latest_price(resolved_ibcontract)
+        
+        CostBasis = float(position_series.avg_cost)
+        SellPrice = float(make_div_by_05(CostBasis*self.SellFactor, buy=False))
+        
+        stock = position_series.symbol
+        today = datetime.datetime.now()
+
+        #TODO: Need to bring these 2 conditions before we look up contract details and CurrPrice, since they don't require this information. These variables take a few seconds to load.
+        # If the symbol is 'USD' - pass. We don't want to trade our cash
+        if position_series.symbol == 'USD':
+            orderid = None
+            pass
+        
+        # If the position is held for less than 2 business days, don't sell it.
+        #TODO: Need to double check the BDay logic holds given the timezone naive datetime objects. Since trading hours extend into midnight China time, this might affect the logic here.
+        elif (position_series.bought_datetime + BDay(2) > today):
+            orderid = None
+            print('Position held for less than 2 days. Skipping')
+            pass
+        
+        # If we're past the fireSaleAge, and the CurrPrice is below the fireSalePrice or the CostBasis is higher than the CurrPrice, then place a sell order
+        elif (
+            position_series.bought_datetime + BDay(self.fireSaleAge) < today 
+            and (
+                self.fireSalePrice>CurrPrice
+                or CostBasis>CurrPrice
+                )
+            ):
+            SellPrice = float(make_div_by_05(.95*CurrPrice, buy=False))
+            print('Firesale')
+            print("Selling {}, \tshares: {}, \tprice: {}".format(stock, StockShares, SellPrice))
+            orderid = self.submit_order(resolved_ibcontract=resolved_ibcontract, action="SELL", shares=StockShares, price=SellPrice, order_type="LMT", orderid=None, tif="GTC")
+            self.add_order_entry(orderid)
+        else:
+            print("Selling {}, \tshares: {}, \tprice: {}".format(stock, StockShares, SellPrice))
+            orderid = self.submit_order(resolved_ibcontract=resolved_ibcontract, action="SELL", shares=StockShares, price=SellPrice, order_type="LMT", orderid=None, tif="GTC")
+            self.add_order_entry(orderid)
+        return orderid
+
+    def rebalance_all_sell_orders(self):
+
+        positions = self.get_current_positions()
+
+        # Get list of open sell orders
+        open_orders = self.get_open_orders_pd()
+        if 'action' in open_orders.columns:
+            open_sell_orders = open_orders[open_orders.action == 'SELL']
+        else:
+            open_sell_orders = pd.DataFrame(None, columns=[0])
+
+        # Review if limit sell order exists for every position    
+        for i, position in positions.iterrows():
+            
+            print('Considering placing sell order for {}'.format(position.symbol))
+            # If the stock already has an existing limit sell order, pass. 
+            #TODO: Check to make sure existing sell order is exact match (ie shares, limit price, what happens to updated limit price?, etc.)
+            if 'symbol' in open_sell_orders.columns:
+                if open_sell_orders.symbol.isin([position.symbol]).any():
+                    print('Existing sell order in place. Skipping')
+                    pass
+            
+            # If position in stock is 0, skip. Sometimes these will remain in our positions table for a day
+            if position.position == 0:
+                print('Do not have a position')
+                pass
+            else:
+                orderid = self.rebalance_sell_order(position)
+
+    
+    def cancel_all_open_buy_orders(self, minutes=0):
+    
+        # Cancel all outstanding buy orders
+        open_orders = self.get_open_orders_pd()
+        if 'action' in open_orders.columns:
+            open_orders = open_orders[open_orders.action == 'BUY']
+            open_orders = open_orders[datetime.datetime.now() - open_orders.time_added > datetime.timedelta(minutes=minutes)]
+            for _, order in open_orders.iterrows():
+                if order.action == "BUY":
+                    print("Cancelling this order: {}".format(order))
+                    print(order.orderId)
+                    self.cancel_order(order.orderId)
+        else:
+            print('open_orders did not have the action column, likely DataFrame is empty')
 
 class finishableQueue(object):
     """
