@@ -1,0 +1,686 @@
+﻿Statement,Header,Field Name,Field Value
+Statement,Data,BrokerName,Interactive Brokers
+Statement,Data,BrokerAddress,
+Statement,Data,Title,Activity Statement
+Statement,Data,Period,"January 1, 2018 - November 20, 2018"
+Statement,Data,WhenGenerated,"2018-11-21, 21:01:23 EST"
+Account Information,Header,Field Name,Field Value
+Account Information,Data,Name,Ching Jui Young
+Account Information,Data,Account,U9509931
+Account Information,Data,Account Type,Individual
+Account Information,Data,Customer Type,Individual
+Account Information,Data,Account Capabilities,Margin
+Account Information,Data,Base Currency,USD
+Net Asset Value,Header,Asset Class,Prior Total,Current Long,Current Short,Current Total,Change
+Net Asset Value,Data,Cash ,35.918401349,10457.568885068,0,10457.568885068,10421.650483718
+Net Asset Value,Data,Stock,0,8825.3,0,8825.3,8825.3
+Net Asset Value,Data,Total,35.918401349,19282.868885068,0,19282.868885068,19246.950483718
+Net Asset Value,Header,Time Weighted Rate of Return
+Net Asset Value,Data,-100%
+Change in NAV,Header,Field Name,Field Value
+Change in NAV,Data,Starting Value,35.918401349
+Change in NAV,Data,Mark-to-Market,-588.39843215
+Change in NAV,Data,Deposits & Withdrawals,19942.7895496
+Change in NAV,Data,Other Fees,-72.3981453
+Change in NAV,Data,Commissions,-35.04248791
+Change in NAV,Data,Ending Value,19282.868885068
+Mark-to-Market Performance Summary,Header,Asset Category,Symbol,Prior Quantity,Current Quantity,Prior Price,Current Price,Mark-to-Market P/L Position,Mark-to-Market P/L Transaction,Mark-to-Market P/L Commissions,Mark-to-Market P/L Other,Mark-to-Market P/L Total,Code
+Mark-to-Market Performance Summary,Data,Stocks,ACU,0,0,--,--,5.8756,2.6344,-2.01303695,0,6.49696305,
+Mark-to-Market Performance Summary,Data,Stocks,ALNA,0,0,--,--,-19.77,107.96,-4.50411927,0,83.68588073,
+Mark-to-Market Performance Summary,Data,Stocks,ALPN,0,0,--,--,53.21,-45.21,-3.0244915,0,4.9755085,
+Mark-to-Market Performance Summary,Data,Stocks,BXG,0,85,--,10.7500,-49.9,-145.6865,-3.04278962,0,-198.62928962,
+Mark-to-Market Performance Summary,Data,Stocks,CUE,0,0,--,--,-43.68,169.26,-3.47252724,0,122.10747276,
+Mark-to-Market Performance Summary,Data,Stocks,FTNW,0,180,--,5.0200,-291.6,-328.68,-3.74485456,0,-624.02485456,
+Mark-to-Market Performance Summary,Data,Stocks,KNSA,0,110,--,16.3400,9.9,-198,-1,0,-189.1,
+Mark-to-Market Performance Summary,Data,Stocks,LAZY,0,200,--,5.1500,-70,10,-1,0,-61,
+Mark-to-Market Performance Summary,Data,Stocks,LEVB,0,263,--,3.6600,-15.78,-19.8302,-1.315,0,-36.9252,
+Mark-to-Market Performance Summary,Data,Stocks,LQDA,0,0,--,--,235.87,12.4286,-2.04139453,0,246.25720547,
+Mark-to-Market Performance Summary,Data,Stocks,MGTA,0,0,--,--,205.92,-179.52,-2.6976708,0,23.7023292,
+Mark-to-Market Performance Summary,Data,Stocks,MOTS,0,100,--,3.0500,0,-10,-1,0,-11,
+Mark-to-Market Performance Summary,Data,Stocks,SIC,0,232,--,8.0100,-135.72,0,-1.16,0,-136.88,
+Mark-to-Market Performance Summary,Data,Stocks,SVVC,0,79,--,13.3500,0,59.25,-1,0,58.25,
+Mark-to-Market Performance Summary,Data,Stocks,TBIO,0,0,--,--,49.5,-18,-2.018432,0,29.481568,
+Mark-to-Market Performance Summary,Data,Total,,,,,,-66.1744,-583.3937,-33.03431647,0,-682.60241647,
+Mark-to-Market Performance Summary,Data,Forex,SGD,48.04109,0.00179,0.74766,0.72712,152.41039585,-91.240728,-2.00817144,0,59.16149641,
+Mark-to-Market Performance Summary,Data,Forex,USD,0,10457.567583523,1.0000,1.0000,0,0,0,0,0,
+Mark-to-Market Performance Summary,Data,Total,,,,,,152.41039585,-91.240728,-2.00817144,0,59.16149641,
+Mark-to-Market Performance Summary,Data,Total (All Assets),,,,,,86.23599585,-674.634428,-35.04248791,0,-623.44092006,
+Mark-to-Market Performance Summary,Data,Other Fees,,,,,,,,,,-72.3981453,
+Total P/L for Statement Period,,,,,,,,,,,,-695.83906536,
+Positions and Mark-to-Market Profit and Loss,Header,Asset Class,Currency,Symbol,Description,Prior Quantity,Quantity,Prior Price,Price,Prior Market Value,Market Value,Price,Position,Trading,Comm.,Other,Total
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,ACU,ACME UNITED CORP,0,0,-,-,0.00,0.00,5.88,2.63,-2.01,0.00,6.50
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,0,0,-,-,0.00,0.00,-19.77,107.96,-4.50,0.00,83.69
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,0,0,-,-,0.00,0.00,53.21,-45.21,-3.02,0.00,4.98
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,0,85,-,10.75,0.00,913.75,-49.90,-145.69,-3.04,0.00,-198.63
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,CUE,CUE BIOPHARMA INC,0,0,-,-,0.00,0.00,-43.68,169.26,-3.47,0.00,122.11
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,FTNW,FTE NETWORKS INC,0,180,-,5.02,0.00,903.60,-291.60,-328.68,-3.74,0.00,-624.02
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,KNSA,KINIKSA PHARMACEUTICALS-A,0,110,-,16.34,0.00,"1,797.40",9.90,-198.00,-1.00,0.00,-189.10
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,LAZY,LAZYDAYS HOLDINGS INC,0,200,-,5.15,0.00,"1,030.00",-70.00,10.00,-1.00,0.00,-61.00
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,LEVB,LEVEL BRANDS INC,0,263,-,3.66,0.00,962.58,-15.78,-19.83,-1.32,0.00,-36.93
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,LQDA,LIQUIDIA TECHNOLOGIES INC,0,0,-,-,0.00,0.00,235.87,12.43,-2.04,0.00,246.26
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,MGTA,MAGENTA THERAPEUTICS INC,0,0,-,-,0.00,0.00,205.92,-179.52,-2.70,0.00,23.70
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,MOTS,MOTUS GI HOLDINGS INC,0,100,-,3.05,0.00,305.00,0.00,-10.00,-1.00,0.00,-11.00
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,SIC,SELECT INTERIOR CONCEPTS-A,0,232,-,8.01,0.00,"1,858.32",-135.72,0.00,-1.16,0.00,-136.88
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,SVVC,FIRSTHAND TECHNOLOGY VALUE,0,79,-,13.35,0.00,"1,054.65",0.00,59.25,-1.00,0.00,58.25
+Positions and Mark-to-Market Profit and Loss,Data,Stocks,USD,TBIO,TRANSLATE BIO INC,0,0,-,-,0.00,0.00,49.50,-18.00,-2.02,0.00,29.48
+Positions and Mark-to-Market Profit and Loss,Data,Total,USD,,,,,,,0.00,"8,825.30",-66.17,-583.39,-33.03,0.00,-682.60
+Positions and Mark-to-Market Profit and Loss,Data,Forex,USD,SGD, ,48,0,0.75,0.73,35.92,0.00,152.41,-91.24,-2.01,0.00,59.16
+Positions and Mark-to-Market Profit and Loss,Data,Forex,USD,USD, ,0,"10,458",1.00,1.00,0.00,"10,457.57",0.00,0.00,0.00,0.00,0.00
+Positions and Mark-to-Market Profit and Loss,Data,Total,USD,,,,,,,35.92,"10,457.57",152.41,-91.24,-2.01,0.00,59.16
+Positions and Mark-to-Market Profit and Loss,Data,Total (All Assets),USD,,,,,,,86.24,-674.63,-35.04,0.00,-623.44
+Realized & Unrealized Performance Summary,Header,Asset Category,Symbol,Cost Adj.,Realized S/T Profit,Realized S/T Loss,Realized L/T Profit,Realized L/T Loss,Realized Total,Unrealized S/T Profit,Unrealized S/T Loss,Unrealized L/T Profit,Unrealized L/T Loss,Unrealized Total,Total,Code
+Realized & Unrealized Performance Summary,Data,Stocks,ACU,0,7.29434243,-0.79737938,0,0,6.49696305,0,0,0,0,0,6.49696305,
+Realized & Unrealized Performance Summary,Data,Stocks,ALNA,0,83.68588073,0,0,0,83.68588073,0,0,0,0,0,83.68588073,
+Realized & Unrealized Performance Summary,Data,Stocks,ALPN,0,5.4889405,-0.513432,0,0,4.9755085,0,0,0,0,0,4.9755085,
+Realized & Unrealized Performance Summary,Data,Stocks,BXG,0,0,-55.25193683,0,0,-55.25193683,0,-143.377353,0,0,-143.377353,-198.62928983,
+Realized & Unrealized Performance Summary,Data,Stocks,CUE,0,122.10747276,0,0,0,122.10747276,0,0,0,0,0,122.10747276,
+Realized & Unrealized Performance Summary,Data,Stocks,FTNW,0,0,-87.93747539,0,0,-87.93747539,0,-536.087379,0,0,-536.087379,-624.02485439,
+Realized & Unrealized Performance Summary,Data,Stocks,KNSA,0,0,0,0,0,0,0,-189.1,0,0,-189.1,-189.1,
+Realized & Unrealized Performance Summary,Data,Stocks,LAZY,0,0,0,0,0,0,0,-61,0,0,-61,-61,
+Realized & Unrealized Performance Summary,Data,Stocks,LEVB,0,0,0,0,0,0,0,-36.9252,0,0,-36.9252,-36.9252,
+Realized & Unrealized Performance Summary,Data,Stocks,LQDA,0,246.25720547,0,0,0,246.25720547,0,0,0,0,0,246.25720547,
+Realized & Unrealized Performance Summary,Data,Stocks,MGTA,0,23.7023292,0,0,0,23.7023292,0,0,0,0,0,23.7023292,
+Realized & Unrealized Performance Summary,Data,Stocks,MOTS,0,0,0,0,0,0,0,-11,0,0,-11,-11,
+Realized & Unrealized Performance Summary,Data,Stocks,SIC,0,0,0,0,0,0,0,-136.88,0,0,-136.88,-136.88,
+Realized & Unrealized Performance Summary,Data,Stocks,SVVC,0,0,0,0,0,0,58.25,0,0,0,58.25,58.25,
+Realized & Unrealized Performance Summary,Data,Stocks,TBIO,0,29.481568,0,0,0,29.481568,0,0,0,0,0,29.481568,
+Realized & Unrealized Performance Summary,Data,Total,,0,518.01773909,-144.5002236,0,0,373.51751549,58.25,-1114.369932,0,0,-1056.119932,-682.60241651,
+Realized & Unrealized Performance Summary,Data,Forex,SGD,0,98.195146,-38.867873,0,0,59.327273,0,-0.000017,0,0,-0.000017,59.327256,
+Realized & Unrealized Performance Summary,Data,Total,,0,98.195146,-38.867873,0,0,59.327273,0,-0.000017,0,0,-0.000017,59.327256,
+Realized & Unrealized Performance Summary,Data,Total (All Assets),,0,616.21288509,-183.3680966,0,0,432.84478849,58.25,-1114.369949,0,0,-1056.119949,-623.27516051,
+Cash Report,Header,Currency Summary,Currency,Total,Securities,Futures,
+Cash Report,Data,Starting Cash,Base Currency Summary,35.918401349,35.918401349,0,
+Cash Report,Data,Commissions,Base Currency Summary,-35.04248791,-35.04248791,0,
+Cash Report,Data,Deposits,Base Currency Summary,84256.7895496,84256.7895496,0,
+Cash Report,Data,Withdrawals,Base Currency Summary,-64314,-64314,0,
+Cash Report,Data,Net Trades (Sales),Base Currency Summary,78708.6521,78708.6521,0,
+Cash Report,Data,Net Trades (Purchase),Base Currency Summary,-88274.76092826,-88274.76092826,0,
+Cash Report,Data,Other Fees,Base Currency Summary,-72.3981453,-72.3981453,0,
+Cash Report,Data,Cash FX Translation Gain/Loss,Base Currency Summary,152.41039585,152.41039585,0,
+Cash Report,Data,Ending Cash,Base Currency Summary,10457.568885068,10457.568885068,0,
+Cash Report,Data,Ending Settled Cash,Base Currency Summary,7827.670485068,7827.670485068,0,
+Cash Report,Data,Starting Cash,SGD,48.04109,48.04109,0,
+Cash Report,Data,Commissions,SGD,-2.673,-2.673,0,
+Cash Report,Data,Deposits,SGD,85732.07,85732.07,0,
+Cash Report,Data,Net Trades (Purchase),SGD,-85727.3463,-85727.3463,0,
+Cash Report,Data,Other Fees,SGD,-50.09,-50.09,0,
+Cash Report,Data,Ending Cash,SGD,0.00179,0.00179,0,
+Cash Report,Data,Ending Settled Cash,SGD,0.00179,0.00179,0,
+Cash Report,Data,Starting Cash,USD,0,0,0,
+Cash Report,Data,Commissions,USD,-33.03431647,-33.03431647,0,
+Cash Report,Data,Deposits,USD,20000,20000,0,
+Cash Report,Data,Withdrawals,USD,-64314,-64314,0,
+Cash Report,Data,Net Trades (Sales),USD,78708.6521,78708.6521,0,
+Cash Report,Data,Net Trades (Purchase),USD,-23869.5202,-23869.5202,0,
+Cash Report,Data,Other Fees,USD,-34.53,-34.53,0,
+Cash Report,Data,Ending Cash,USD,10457.567583523,10457.567583523,0,
+Cash Report,Data,Ending Settled Cash,USD,7827.669183523,7827.669183523,0,
+Statement of Funds,Header,Currency,Report Date,Activity Date,Description,Debit,Credit,Balance
+Statement of Funds,Data,Base Currency Summary,2018-01-01,,Opening Balance, , ,35.918401349
+Statement of Funds,Data,Base Currency Summary,2018-01-03,2018-01-03,Balance of Monthly Minimum Fee for Dec 2017,-8.0398421, ,27.878559249
+Statement of Funds,Data,Base Currency Summary,2018-02-05,2018-02-05,Balance of Monthly Minimum Fee for Jan 2018,-19.851872, ,8.026687249
+Statement of Funds,Data,Base Currency Summary,2018-03-06,2018-03-06,Balance of Monthly Minimum Fee for Feb 2018,-8.4404892, ,-0.413801951
+Statement of Funds,Data,Base Currency Summary,2018-05-02,2018-05-02,Electronic Fund Transfer, ,37412,37411.586198049
+Statement of Funds,Data,Base Currency Summary,2018-05-03,2018-05-03,Electronic Fund Transfer, ,26844.7895496,64256.375747649
+Statement of Funds,Data,Base Currency Summary,2018-05-03,2018-05-03,"Net Amount in Base from Forex Trade: 64,314 USD.SGD",-93.24889944, ,64163.126848209
+Statement of Funds,Data,Base Currency Summary,2018-05-08,2018-05-08,Disbursement Initiated by Ching Jui Young,-64314, ,-150.873151791
+Statement of Funds,Data,Base Currency Summary,2018-06-05,2018-06-05,Balance of Monthly Minimum Fee for May 2018,-1.535942, ,-152.409093791
+Statement of Funds,Data,Base Currency Summary,2018-10-30,2018-10-30,Electronic Fund Transfer, ,10000,9847.590906209
+Statement of Funds,Data,Base Currency Summary,2018-11-01,2018-11-01,Electronic Fund Transfer, ,10000,19847.590906209
+Statement of Funds,Data,Base Currency Summary,2018-11-02,2018-11-02,Balance of Monthly Minimum Fee for Oct 2018,-20, ,19827.590906209
+Statement of Funds,Data,Base Currency Summary,2018-11-02,2018-11-02,Buy 37 ACME UNITED CORP ,-656.64, ,19170.950906209
+Statement of Funds,Data,Base Currency Summary,2018-11-02,2018-11-02,Buy 80 ALLENA PHARMACEUTICALS INC ,-665, ,18505.950906209
+Statement of Funds,Data,Base Currency Summary,2018-11-02,2018-11-02,Buy 50 ALPINE IMMUNE SCIENCES INC ,-244.5, ,18261.450906209
+Statement of Funds,Data,Base Currency Summary,2018-11-02,2018-11-02,Buy 83 ALPINE IMMUNE SCIENCES INC ,-415, ,17846.450906209
+Statement of Funds,Data,Base Currency Summary,2018-11-05,2018-11-05,Order Cancellation Fee for Nov 2018,-0.02, ,17846.430906209
+Statement of Funds,Data,Base Currency Summary,2018-11-05,2018-11-05,y******41:US Equity and Options Add-On Streaming Bundle Non-Professional for Nov 2018,-4.5, ,17841.930906209
+Statement of Funds,Data,Base Currency Summary,2018-11-05,2018-11-05,y******41:US Securities Snapshot and Futures Value Bundle Non-Professional for Nov 2018,-10, ,17831.930906209
+Statement of Funds,Data,Base Currency Summary,2018-11-05,2018-11-05,Buy 10 CUE BIOPHARMA INC ,-74, ,17757.930906209
+Statement of Funds,Data,Base Currency Summary,2018-11-05,2018-11-05,Buy 210 CUE BIOPHARMA INC ,-1533.65, ,16224.280906209
+Statement of Funds,Data,Base Currency Summary,2018-11-05,2018-11-05,Buy 53 CUE BIOPHARMA INC ,-387.2975, ,15836.983406209
+Statement of Funds,Data,Base Currency Summary,2018-11-05,2018-11-05,Buy 216 FTE NETWORKS INC ,-1999.62, ,13837.363406209
+Statement of Funds,Data,Base Currency Summary,2018-11-06,2018-11-06,Sell -1 ACME UNITED CORP , ,16.94964765,13854.313053859
+Statement of Funds,Data,Base Currency Summary,2018-11-06,2018-11-06,Sell -36 ACME UNITED CORP , ,646.1873154,14500.500369259
+Statement of Funds,Data,Base Currency Summary,2018-11-06,2018-11-06,Buy 55 BLUEGREEN VACATIONS CORP ,-707.75, ,13792.750369259
+Statement of Funds,Data,Base Currency Summary,2018-11-06,2018-11-06,Buy 100 BLUEGREEN VACATIONS CORP ,-1285, ,12507.750369259
+Statement of Funds,Data,Base Currency Summary,2018-11-08,2018-11-08,Sell -80 ALLENA PHARMACEUTICALS INC , ,670.981744,13178.732113259
+Statement of Funds,Data,Base Currency Summary,2018-11-08,2018-11-08,Sell -273 CUE BIOPHARMA INC , ,2117.05497276,15295.787086019
+Statement of Funds,Data,Base Currency Summary,2018-11-12,2018-11-12,Sell -100 ALPINE IMMUNE SCIENCES INC , ,498.9816,15794.768686019
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 243 ALLENA PHARMACEUTICALS INC ,-1993.815, ,13800.953686019
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Sell -10 ALPINE IMMUNE SCIENCES INC , ,50.4981405,13851.451826519
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Sell -23 ALPINE IMMUNE SCIENCES INC , ,114.995768,13966.447594519
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Sell -216 FTE NETWORKS INC , ,1471.99514544,15438.442739959
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 100 KINIKSA PHARMACEUTICALS-A ,-1806, ,13632.442739959
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 10 KINIKSA PHARMACEUTICALS-A ,-180.5, ,13451.942739959
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 200 LAZYDAYS HOLDINGS INC ,-1091, ,12360.942739959
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 10 LIQUIDIA TECHNOLOGIES INC ,-194.5, ,12166.442739959
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 93 LIQUIDIA TECHNOLOGIES INC ,-1799.55, ,10366.892739959
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 264 MAGENTA THERAPEUTICS INC ,-1994.52, ,8372.372739959
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 232 SELECT INTERIOR CONCEPTS-A ,-1995.2, ,6377.172739959
+Statement of Funds,Data,Base Currency Summary,2018-11-13,2018-11-13,Buy 90 TRANSLATE BIO INC ,-563.5, ,5813.672739959
+Statement of Funds,Data,Base Currency Summary,2018-11-14,2018-11-14,Sell -155 BLUEGREEN VACATIONS CORP , ,1871.620710375,7685.293450334
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Sell -100 ALLENA PHARMACEUTICALS INC , ,851.977011,8537.270461334
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Sell -143 ALLENA PHARMACEUTICALS INC , ,1219.54212573,9756.812587064
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Buy 85 BLUEGREEN VACATIONS CORP ,-991.25, ,8765.562587064
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Buy 263 LEVEL BRANDS INC ,-999.5052, ,7766.057387064
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Sell -100 LIQUIDIA TECHNOLOGIES INC , ,2176.959786,9943.017173064
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Sell -3 LIQUIDIA TECHNOLOGIES INC , ,63.347419468,10006.364592532
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Sell -18 MAGENTA THERAPEUTICS INC , ,136.6960679,10143.060660432
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Sell -246 MAGENTA THERAPEUTICS INC , ,1881.5262613,12024.586921732
+Statement of Funds,Data,Base Currency Summary,2018-11-19,2018-11-19,Sell -90 TRANSLATE BIO INC , ,592.981568,12617.568489732
+Statement of Funds,Data,Base Currency Summary,2018-11-20,2018-11-20,Order Cancellation Fee for Nov 2018,-0.01, ,12617.558489732
+Statement of Funds,Data,Base Currency Summary,2018-11-20,2018-11-20,Buy 180 FTE NETWORKS INC ,-1000, ,11617.558489732
+Statement of Funds,Data,Base Currency Summary,2018-11-20,2018-11-20,Buy 100 MOTUS GI HOLDINGS INC ,-316, ,11301.558489732
+Statement of Funds,Data,Base Currency Summary,2018-11-20,2018-11-20,Buy 79 FIRSTHAND TECHNOLOGY VALUE ,-996.4, ,10305.158489732
+Statement of Funds,Data,Base Currency Summary,2018-11-20,,FX Translation P&L, ,152.41039585,10457.568885582
+Statement of Funds,Data,Base Currency Summary,2018-11-20,,Closing Balance,-88369.84474474,98791.495228973,10457.568885068
+Statement of Funds,Data,SGD,2018-01-01,,Opening Balance, , ,48.04109
+Statement of Funds,Data,SGD,2018-01-03,2018-01-03,Balance of Monthly Minimum Fee for Dec 2017,-10.69, ,37.35109
+Statement of Funds,Data,SGD,2018-02-05,2018-02-05,Balance of Monthly Minimum Fee for Jan 2018,-26.24, ,11.11109
+Statement of Funds,Data,SGD,2018-03-06,2018-03-06,Balance of Monthly Minimum Fee for Feb 2018,-11.11, ,0.00109
+Statement of Funds,Data,SGD,2018-05-02,2018-05-02,Electronic Fund Transfer, ,50000,50000.00109
+Statement of Funds,Data,SGD,2018-05-03,2018-05-03,Electronic Fund Transfer, ,35732.07,85732.07109
+Statement of Funds,Data,SGD,2018-05-03,2018-05-03,"Trading Currency Leg from Forex Trade: 64,314 USD.SGD",-85727.3463, ,4.72479
+Statement of Funds,Data,SGD,2018-05-03,2018-05-03,Commission from Forex Trade,-2.00817144, ,2.71661856
+Statement of Funds,Data,SGD,2018-06-05,2018-06-05,Balance of Monthly Minimum Fee for May 2018,-2.05, ,0.66661856
+Statement of Funds,Data,SGD,2018-11-20,,Closing Balance,-85777.4363,85732.07,0.00179
+Statement of Funds,Data,USD,2018-01-01,,Opening Balance, , ,0
+Statement of Funds,Data,USD,2018-05-03,2018-05-03,Traded Currency Leg from Forex Trade, ,64314,64314
+Statement of Funds,Data,USD,2018-05-08,2018-05-08,Disbursement Initiated by Ching Jui Young,-64314, ,0
+Statement of Funds,Data,USD,2018-10-30,2018-10-30,Electronic Fund Transfer, ,10000,10000
+Statement of Funds,Data,USD,2018-11-01,2018-11-01,Electronic Fund Transfer, ,10000,20000
+Statement of Funds,Data,USD,2018-11-02,2018-11-02,Balance of Monthly Minimum Fee for Oct 2018,-20, ,19980
+Statement of Funds,Data,USD,2018-11-02,2018-11-02,Buy 37 ACME UNITED CORP ,-656.64, ,19323.36
+Statement of Funds,Data,USD,2018-11-02,2018-11-02,Buy 80 ALLENA PHARMACEUTICALS INC ,-665, ,18658.36
+Statement of Funds,Data,USD,2018-11-02,2018-11-02,Buy 50 ALPINE IMMUNE SCIENCES INC ,-244.5, ,18413.86
+Statement of Funds,Data,USD,2018-11-02,2018-11-02,Buy 83 ALPINE IMMUNE SCIENCES INC ,-415, ,17998.86
+Statement of Funds,Data,USD,2018-11-05,2018-11-05,Order Cancellation Fee for Nov 2018,-0.02, ,17998.84
+Statement of Funds,Data,USD,2018-11-05,2018-11-05,y******41:US Equity and Options Add-On Streaming Bundle Non-Professional for Nov 2018,-4.5, ,17994.34
+Statement of Funds,Data,USD,2018-11-05,2018-11-05,y******41:US Securities Snapshot and Futures Value Bundle Non-Professional for Nov 2018,-10, ,17984.34
+Statement of Funds,Data,USD,2018-11-05,2018-11-05,Buy 10 CUE BIOPHARMA INC ,-74, ,17910.34
+Statement of Funds,Data,USD,2018-11-05,2018-11-05,Buy 210 CUE BIOPHARMA INC ,-1533.65, ,16376.69
+Statement of Funds,Data,USD,2018-11-05,2018-11-05,Buy 53 CUE BIOPHARMA INC ,-387.2975, ,15989.3925
+Statement of Funds,Data,USD,2018-11-05,2018-11-05,Buy 216 FTE NETWORKS INC ,-1999.62, ,13989.7725
+Statement of Funds,Data,USD,2018-11-06,2018-11-06,Sell -1 ACME UNITED CORP , ,16.94964765,14006.72214765
+Statement of Funds,Data,USD,2018-11-06,2018-11-06,Sell -36 ACME UNITED CORP , ,646.1873154,14652.90946305
+Statement of Funds,Data,USD,2018-11-06,2018-11-06,Buy 55 BLUEGREEN VACATIONS CORP ,-707.75, ,13945.15946305
+Statement of Funds,Data,USD,2018-11-06,2018-11-06,Buy 100 BLUEGREEN VACATIONS CORP ,-1285, ,12660.15946305
+Statement of Funds,Data,USD,2018-11-08,2018-11-08,Sell -80 ALLENA PHARMACEUTICALS INC , ,670.981744,13331.14120705
+Statement of Funds,Data,USD,2018-11-08,2018-11-08,Sell -273 CUE BIOPHARMA INC , ,2117.05497276,15448.19617981
+Statement of Funds,Data,USD,2018-11-12,2018-11-12,Sell -100 ALPINE IMMUNE SCIENCES INC , ,498.9816,15947.17777981
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 243 ALLENA PHARMACEUTICALS INC ,-1993.815, ,13953.36277981
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Sell -10 ALPINE IMMUNE SCIENCES INC , ,50.4981405,14003.86092031
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Sell -23 ALPINE IMMUNE SCIENCES INC , ,114.995768,14118.85668831
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Sell -216 FTE NETWORKS INC , ,1471.99514544,15590.85183375
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 100 KINIKSA PHARMACEUTICALS-A ,-1806, ,13784.85183375
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 10 KINIKSA PHARMACEUTICALS-A ,-180.5, ,13604.35183375
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 200 LAZYDAYS HOLDINGS INC ,-1091, ,12513.35183375
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 10 LIQUIDIA TECHNOLOGIES INC ,-194.5, ,12318.85183375
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 93 LIQUIDIA TECHNOLOGIES INC ,-1799.55, ,10519.30183375
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 264 MAGENTA THERAPEUTICS INC ,-1994.52, ,8524.78183375
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 232 SELECT INTERIOR CONCEPTS-A ,-1995.2, ,6529.58183375
+Statement of Funds,Data,USD,2018-11-13,2018-11-13,Buy 90 TRANSLATE BIO INC ,-563.5, ,5966.08183375
+Statement of Funds,Data,USD,2018-11-14,2018-11-14,Sell -155 BLUEGREEN VACATIONS CORP , ,1871.620710375,7837.702544125
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Sell -100 ALLENA PHARMACEUTICALS INC , ,851.977011,8689.679555125
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Sell -143 ALLENA PHARMACEUTICALS INC , ,1219.54212573,9909.221680855
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Buy 85 BLUEGREEN VACATIONS CORP ,-991.25, ,8917.971680855
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Buy 263 LEVEL BRANDS INC ,-999.5052, ,7918.466480855
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Sell -100 LIQUIDIA TECHNOLOGIES INC , ,2176.959786,10095.426266855
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Sell -3 LIQUIDIA TECHNOLOGIES INC , ,63.347419468,10158.773686323
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Sell -18 MAGENTA THERAPEUTICS INC , ,136.6960679,10295.469754223
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Sell -246 MAGENTA THERAPEUTICS INC , ,1881.5262613,12176.996015523
+Statement of Funds,Data,USD,2018-11-19,2018-11-19,Sell -90 TRANSLATE BIO INC , ,592.981568,12769.977583523
+Statement of Funds,Data,USD,2018-11-20,2018-11-20,Order Cancellation Fee for Nov 2018,-0.01, ,12769.967583523
+Statement of Funds,Data,USD,2018-11-20,2018-11-20,Buy 180 FTE NETWORKS INC ,-1000, ,11769.967583523
+Statement of Funds,Data,USD,2018-11-20,2018-11-20,Buy 100 MOTUS GI HOLDINGS INC ,-316, ,11453.967583523
+Statement of Funds,Data,USD,2018-11-20,2018-11-20,Buy 79 FIRSTHAND TECHNOLOGY VALUE ,-996.4, ,10457.567583523
+Statement of Funds,Data,USD,2018-11-20,,Closing Balance,-88240.73587144,98696.295283523,10457.567583523
+Change in Position Value,Header,Asset Class,Currency,Field Name,Field Value
+Change in Position Value,Data,STK,USD,Prior Period Value,0
+Change in Position Value,Data,STK,USD,Transactions,9474.8681
+Change in Position Value,Data,STK,USD,MTM P/L On Prior Period,-66.1744
+Change in Position Value,Data,STK,USD,MTM P/L On Transactions,-583.3937
+Change in Position Value,Data,STK,USD,End Of Period Value,8825.3
+Open Positions,Header,DataDiscriminator,Asset Category,Currency,Symbol,Open,Quantity,Mult,Cost Price,Cost Basis,Close Price,Value,Unrealized P/L,Code
+Open Positions,Data,Summary,Stocks,USD,BXG,-,85,1,12.436792388,1057.127353,10.75,913.75,-143.377353,
+Open Positions,Data,Lot,Stocks,USD,BXG,"2018-11-19, 11:03:25",85,,12.436792388,1057.127353,10.75,913.75,-143.377353,LD
+Open Positions,Data,Summary,Stocks,USD,FTNW,-,180,1,7.998263217,1439.687379,5.02,903.6,-536.087379,
+Open Positions,Data,Lot,Stocks,USD,FTNW,"2018-11-20, 13:24:18",180,,7.998263217,1439.687379,5.02,903.6,-536.087379,LD
+Open Positions,Data,Summary,Stocks,USD,KNSA,-,110,1,18.059090909,1986.5,16.34,1797.4,-189.1,SY
+Open Positions,Data,Lot,Stocks,USD,KNSA,"2018-11-13, 11:08:04",10,,18.05,180.5,16.34,163.4,-17.1,
+Open Positions,Data,Lot,Stocks,USD,KNSA,"2018-11-13, 11:07:53",100,,18.06,1806,16.34,1634,-172,
+Open Positions,Data,Summary,Stocks,USD,LAZY,-,200,1,5.455,1091,5.15,1030,-61,SY
+Open Positions,Data,Lot,Stocks,USD,LAZY,"2018-11-13, 11:04:11",200,,5.455,1091,5.15,1030,-61,
+Open Positions,Data,Summary,Stocks,USD,LEVB,-,263,1,3.8004,999.5052,3.66,962.58,-36.9252,
+Open Positions,Data,Lot,Stocks,USD,LEVB,"2018-11-19, 13:18:28",263,,3.8004,999.5052,3.66,962.58,-36.9252,
+Open Positions,Data,Summary,Stocks,USD,MOTS,-,100,1,3.16,316,3.05,305,-11,
+Open Positions,Data,Lot,Stocks,USD,MOTS,"2018-11-20, 12:56:16",100,,3.16,316,3.05,305,-11,
+Open Positions,Data,Summary,Stocks,USD,SIC,-,232,1,8.6,1995.2,8.01,1858.32,-136.88,SY
+Open Positions,Data,Lot,Stocks,USD,SIC,"2018-11-13, 12:46:32",232,,8.6,1995.2,8.01,1858.32,-136.88,
+Open Positions,Data,Summary,Stocks,USD,SVVC,-,79,1,12.612658228,996.4,13.35,1054.65,58.25,
+Open Positions,Data,Lot,Stocks,USD,SVVC,"2018-11-20, 13:05:33",79,,12.612658228,996.4,13.35,1054.65,58.25,
+Open Positions,Total,,Stocks,USD,,,,,,9881.419932,,8825.3,-1056.119932,
+Trade Summary by Asset Class,Header,Asset Category,Total Number of Trades,Total Shares (or Contracts) Bought,Total Shares (or Contracts) Sold
+Trade Summary by Asset Class,Data,Stocks,40,"2,843","-1,594"
+Trade Summary by Asset Class,Data,Forex,1,-,-
+Trade Summary by Symbol,Header,Asset Category,Currency,Symbol,Buys Quantity,Buys Avg. Price,Buys Proceeds,Sells Quantity,Sells Avg. Price,Sells Proceeds
+Trade Summary by Symbol,Data,Stocks,USD,ACU,37,17.72,-655.64,-37,17.95,664.15
+Trade Summary by Symbol,Data,Stocks,USD,ALNA,323,8.224767802,-2656.6,-323,8.497801858,2744.79
+Trade Summary by Symbol,Data,Stocks,USD,ALPN,133,4.95112782,-658.5,-133,5.011278195,666.5
+Trade Summary by Symbol,Data,Stocks,USD,BXG,240,12.425,-2982,-155,12.0817,1872.6635
+Trade Summary by Symbol,Data,Stocks,USD,CUE,273,7.3,-1992.9,-273,7.76,2118.48
+Trade Summary by Symbol,Data,Stocks,USD,FTNW,396,7.568181818,-2997,-216,6.82,1473.12
+Trade Summary by Symbol,Data,Stocks,USD,KNSA,110,18.05,-1985.5,0,0,0
+Trade Summary by Symbol,Data,Stocks,USD,LAZY,200,5.45,-1090,0,0,0
+Trade Summary by Symbol,Data,Stocks,USD,LEVB,263,3.7954,-998.1902,0,0,0
+Trade Summary by Symbol,Data,Stocks,USD,LQDA,103,19.35,-1993.05,-103,21.760666019,2241.3486
+Trade Summary by Symbol,Data,Stocks,USD,MGTA,264,7.55,-1993.2,-264,7.65,2019.6
+Trade Summary by Symbol,Data,Stocks,USD,MOTS,100,3.15,-315,0,0,0
+Trade Summary by Symbol,Data,Stocks,USD,SIC,232,8.595,-1994.04,0,0,0
+Trade Summary by Symbol,Data,Stocks,USD,SVVC,79,12.6,-995.4,0,0,0
+Trade Summary by Symbol,Data,Stocks,USD,TBIO,90,6.25,-562.5,-90,6.6,594
+Trade Summary by Symbol,Data,Total,,,,,-23869.5202,,,14394.6521
+Trade Summary by Symbol,Data,Forex,SGD,USD.SGD,64314,1.33295,-85727.3463,0,0,0
+Trade Summary by Symbol,Data,Total,,,,,-85727.3463,,,0
+Trade Summary by Symbol,Data,Total in USD,,,,,-64405.240728264,,,0
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Exchange,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
+Trades,Data,Order,Stocks,USD,ACU,"2018-11-02, 13:48:55",-,37,17.72,17.87,-655.64,-1,656.64,0,5.55,O
+Trades,Data,Trade,Stocks,USD,ACU,"2018-11-02, 13:48:55",DRCTEDGE,37,17.72,17.87,-655.64,-1,656.64,0,5.55,O
+Trades,SubTotal,,Stocks,USD,ACU (Bought),,,37,17.72,,-655.64,-1,656.64,0,5.55,
+Trades,Data,Order,Stocks,USD,ACU,"2018-11-06, 14:57:08",-,-37,17.95,18.0288,664.15,-1.01303695,-656.64,6.496963,-2.9156,C;P
+Trades,Data,Trade,Stocks,USD,ACU,"2018-11-06, 14:57:08",AMEX,-1,17.95,18.0288,17.95,-1.00035235,-17.747027,-0.797379,-0.0788,C;P
+Trades,Data,ClosedLot,Stocks,USD,ACU,2018-11-02,,1,17.747027,,,,17.747027,-0.797379,,ST
+Trades,Data,Trade,Stocks,USD,ACU,"2018-11-06, 15:33:21",AMEX,-36,17.95,18.0288,646.2,-0.0126846,-638.892973,7.294342,-2.8368,C;P
+Trades,Data,ClosedLot,Stocks,USD,ACU,2018-11-02,,36,17.747027028,,,,638.892973,7.294342,,ST
+Trades,SubTotal,,Stocks,USD,ACU (Sold),,,-37,17.95,,664.15,-1.01303695,-656.64,6.496963,-2.9156,
+Trades,SubTotal,,Stocks,USD,ACU,,,0,,,8.51,-2.01303695,0,6.496963,2.6344,
+Trades,Data,Order,Stocks,USD,ALNA,"2018-11-02, 15:54:43",-,80,8.3,8.28,-664,-1,665,0,-1.6,O
+Trades,Data,Trade,Stocks,USD,ALNA,"2018-11-02, 15:54:43",ISLAND,80,8.3,8.28,-664,-1,665,0,-1.6,O
+Trades,Data,Order,Stocks,USD,ALNA,"2018-11-13, 10:53:21",-,243,8.2,8.36,-1992.6,-1.215,1993.815,0,38.88,O
+Trades,Data,Trade,Stocks,USD,ALNA,"2018-11-13, 10:53:21",ISLAND,243,8.2,8.36,-1992.6,-1.215,1993.815,0,38.88,O
+Trades,SubTotal,,Stocks,USD,ALNA (Bought),,,323,8.224767802,,-2656.6,-2.215,2658.815,0,37.28,
+Trades,Data,Order,Stocks,USD,ALNA,"2018-11-08, 13:57:49",-,-80,8.4,8.61,672,-1.018256,-665,5.981744,-16.8,C
+Trades,Data,Trade,Stocks,USD,ALNA,"2018-11-08, 13:57:49",ISLAND,-80,8.4,8.61,672,-1.018256,-665,5.981744,-16.8,C
+Trades,Data,ClosedLot,Stocks,USD,ALNA,2018-11-02,,80,8.3125,,,,665,5.981744,,ST
+Trades,Data,Order,Stocks,USD,ALNA,"2018-11-19, 10:36:17",-,-243,8.53,8.17,2072.79,-1.27086327,-1993.815,77.704137,87.48,C;P
+Trades,Data,Trade,Stocks,USD,ALNA,"2018-11-19, 10:36:17",ISLAND,-100,8.53,8.17,853,-1.022989,-820.5,31.477011,36,C;P
+Trades,Data,ClosedLot,Stocks,USD,ALNA,2018-11-13,,100,8.205,,,,820.5,31.477011,,ST
+Trades,Data,Trade,Stocks,USD,ALNA,"2018-11-19, 10:36:17",ISLAND,-143,8.53,8.17,1219.79,-0.24787427,-1173.315,46.227126,51.48,C;P
+Trades,Data,ClosedLot,Stocks,USD,ALNA,2018-11-13,,143,8.205,,,,1173.315,46.227126,,ST
+Trades,SubTotal,,Stocks,USD,ALNA (Sold),,,-323,8.497801858,,2744.79,-2.28911927,-2658.815,83.685881,70.68,
+Trades,SubTotal,,Stocks,USD,ALNA,,,0,,,88.19,-4.50411927,-0,83.685881,107.96,
+Trades,Data,Order,Stocks,USD,ALPN,"2018-11-02, 15:55:47",-,133,4.95112782,4.77,-658.5,-1,659.5,0,-24.09,O;P
+Trades,Data,Trade,Stocks,USD,ALPN,"2018-11-02, 15:55:47",ISLAND,50,4.87,4.77,-243.5,-1,244.5,0,-5,O;P
+Trades,Data,Trade,Stocks,USD,ALPN,"2018-11-02, 15:56:06",ISLAND,83,5,4.77,-415,0,415,0,-19.09,O;P
+Trades,SubTotal,,Stocks,USD,ALPN (Bought),,,133,4.95112782,,-658.5,-1,659.5,0,-24.09,
+Trades,Data,Order,Stocks,USD,ALPN,"2018-11-12, 13:56:17",-,-100,5,5.18,500,-1.0184,-494.5,4.4816,-18,C
+Trades,Data,Trade,Stocks,USD,ALPN,"2018-11-12, 13:56:17",ISLAND,-100,5,5.18,500,-1.0184,-494.5,4.4816,-18,C
+Trades,Data,ClosedLot,Stocks,USD,ALPN,2018-11-02,,100,4.945,,,,494.5,4.4816,,ST
+Trades,Data,Order,Stocks,USD,ALPN,"2018-11-13, 10:09:43",-,-33,5.045454545,5.14,166.5,-1.0060915,-165,0.493908,-3.12,C;P
+Trades,Data,Trade,Stocks,USD,ALPN,"2018-11-13, 10:09:43",ISLAND,-10,5.15,5.14,51.5,-1.0018595,-50,0.49814,0.1,C;P
+Trades,Data,ClosedLot,Stocks,USD,ALPN,2018-11-02,,10,5,,,,50,0.49814,,ST
+Trades,Data,Trade,Stocks,USD,ALPN,"2018-11-13, 10:21:36",ISLAND,-23,5,5.14,115,-0.004232,-115,-0.004232,-3.22,C;P
+Trades,Data,ClosedLot,Stocks,USD,ALPN,2018-11-02,,23,5,,,,115,-0.004232,,ST
+Trades,SubTotal,,Stocks,USD,ALPN (Sold),,,-133,5.011278195,,666.5,-2.0244915,-659.5,4.975508,-21.12,
+Trades,SubTotal,,Stocks,USD,ALPN,,,0,,,8,-3.0244915,0,4.975508,-45.21,
+Trades,Data,Order,Stocks,USD,BXG,"2018-11-06, 11:37:04",-,155,12.85,11.84,-1991.75,-1,1992.75,0,-156.55,O;P
+Trades,Data,Trade,Stocks,USD,BXG,"2018-11-06, 11:37:04",NYSE,55,12.85,11.84,-706.75,-1,707.75,0,-55.55,O;P
+Trades,Data,Trade,Stocks,USD,BXG,"2018-11-06, 11:37:04",NYSE,100,12.85,11.84,-1285,0,1285,0,-101,O;P
+Trades,Data,Order,Stocks,USD,BXG,"2018-11-19, 11:03:25",-,85,11.65,11.41,-990.25,-1,991.25,65.877353,-20.4,O
+Trades,Data,Trade,Stocks,USD,BXG,"2018-11-19, 11:03:25",NYSE,85,11.65,11.41,-990.25,-1,991.25,65.877353,-20.4,O
+Trades,Data,WashSale,Stocks,USD,BXG,2018-11-19,,85,,,,,,65.877353,,ST
+Trades,SubTotal,,Stocks,USD,BXG (Bought),,,240,12.425,,-2982,-2,2984,65.877353,-176.95,
+Trades,Data,Order,Stocks,USD,BXG,"2018-11-14, 10:08:11",-,-155,12.0817,11.88,1872.6635,-1.042789625,-1992.75,-121.12929,31.2635,C
+Trades,Data,Trade,Stocks,USD,BXG,"2018-11-14, 10:08:11",IBKRATS,-155,12.0817,11.88,1872.6635,-1.042789625,-1992.75,-121.12929,31.2635,C
+Trades,Data,ClosedLot,Stocks,USD,BXG,2018-11-06,,155,12.856451613,,,,1992.75,-121.12929,,ST
+Trades,SubTotal,,Stocks,USD,BXG (Sold),,,-155,12.0817,,1872.6635,-1.042789625,-1992.75,-121.12929,31.2635,
+Trades,SubTotal,,Stocks,USD,BXG,,,85,,,-1109.3365,-3.042789625,991.25,-55.251937,-145.6865,
+Trades,Data,Order,Stocks,USD,CUE,"2018-11-05, 09:42:48",-,273,7.3,7.48,-1992.9,-2.0475,1994.9475,0,49.14,O;P
+Trades,Data,Trade,Stocks,USD,CUE,"2018-11-05, 09:42:48",AMEX,10,7.3,7.48,-73,-1,74,0,1.8,O;P
+Trades,Data,Trade,Stocks,USD,CUE,"2018-11-05, 09:42:59",AMEX,210,7.3,7.48,-1533,-0.65,1533.65,0,37.8,O;P
+Trades,Data,Trade,Stocks,USD,CUE,"2018-11-05, 09:42:59",AMEX,53,7.3,7.48,-386.9,-0.3975,387.2975,0,9.54,O;P
+Trades,SubTotal,,Stocks,USD,CUE (Bought),,,273,7.3,,-1992.9,-2.0475,1994.9475,0,49.14,
+Trades,Data,Order,Stocks,USD,CUE,"2018-11-08, 09:30:00",-,-273,7.76,7.32,2118.48,-1.42502724,-1994.9475,122.107472,120.12,C
+Trades,Data,Trade,Stocks,USD,CUE,"2018-11-08, 09:30:00",ISLAND,-273,7.76,7.32,2118.48,-1.42502724,-1994.9475,122.107472,120.12,C
+Trades,Data,ClosedLot,Stocks,USD,CUE,2018-11-05,,273,7.3075,,,,1994.9475,122.107472,,ST
+Trades,SubTotal,,Stocks,USD,CUE (Sold),,,-273,7.76,,2118.48,-1.42502724,-1994.9475,122.107472,120.12,
+Trades,SubTotal,,Stocks,USD,CUE,,,0,,,125.58,-3.47252724,-0,122.107472,169.26,
+Trades,Data,Order,Stocks,USD,FTNW,"2018-11-05, 09:34:38",-,216,9.25,8.3,-1998,-1.62,1999.62,0,-205.2,O
+Trades,Data,Trade,Stocks,USD,FTNW,"2018-11-05, 09:34:38",AMEX,216,9.25,8.3,-1998,-1.62,1999.62,0,-205.2,O
+Trades,Data,Order,Stocks,USD,FTNW,"2018-11-20, 13:24:18",-,180,5.55,5.02,-999,-1,1000,439.687379,-95.4,O
+Trades,Data,Trade,Stocks,USD,FTNW,"2018-11-20, 13:24:18",DRCTEDGE,180,5.55,5.02,-999,-1,1000,439.687379,-95.4,O
+Trades,Data,WashSale,Stocks,USD,FTNW,2018-11-20,,180,,,,,,439.687379,,ST
+Trades,SubTotal,,Stocks,USD,FTNW (Bought),,,396,7.568181818,,-2997,-2.62,2999.62,439.687379,-300.6,
+Trades,Data,Order,Stocks,USD,FTNW,"2018-11-13, 10:34:29",-,-216,6.82,6.95,1473.12,-1.12485456,-1999.62,-527.624855,-28.08,C
+Trades,Data,Trade,Stocks,USD,FTNW,"2018-11-13, 10:34:29",AMEX,-216,6.82,6.95,1473.12,-1.12485456,-1999.62,-527.624855,-28.08,C
+Trades,Data,ClosedLot,Stocks,USD,FTNW,2018-11-05,,216,9.2575,,,,1999.62,-527.624855,,ST
+Trades,SubTotal,,Stocks,USD,FTNW (Sold),,,-216,6.82,,1473.12,-1.12485456,-1999.62,-527.624855,-28.08,
+Trades,SubTotal,,Stocks,USD,FTNW,,,180,,,-1523.88,-3.74485456,1000,-87.937476,-328.68,
+Trades,Data,Order,Stocks,USD,KNSA,"2018-11-13, 11:07:53",-,110,18.05,16.25,-1985.5,-1,1986.5,0,-198,O;P
+Trades,Data,Trade,Stocks,USD,KNSA,"2018-11-13, 11:07:53",ISLAND,100,18.05,16.25,-1805,-1,1806,0,-180,O;P
+Trades,Data,Trade,Stocks,USD,KNSA,"2018-11-13, 11:08:04",ISLAND,10,18.05,16.25,-180.5,0,180.5,0,-18,O;P
+Trades,SubTotal,,Stocks,USD,KNSA (Bought),,,110,18.05,,-1985.5,-1,1986.5,0,-198,
+Trades,Data,Order,Stocks,USD,LAZY,"2018-11-13, 11:04:11",-,200,5.45,5.5,-1090,-1,1091,0,10,O
+Trades,Data,Trade,Stocks,USD,LAZY,"2018-11-13, 11:04:11",ISLAND,200,5.45,5.5,-1090,-1,1091,0,10,O
+Trades,SubTotal,,Stocks,USD,LAZY (Bought),,,200,5.45,,-1090,-1,1091,0,10,
+Trades,Data,Order,Stocks,USD,LEVB,"2018-11-19, 13:18:28",-,263,3.7954,3.72,-998.1902,-1.315,999.5052,0,-19.8302,O
+Trades,Data,Trade,Stocks,USD,LEVB,"2018-11-19, 13:18:28",IBKRATS,263,3.7954,3.72,-998.1902,-1.315,999.5052,0,-19.8302,O
+Trades,SubTotal,,Stocks,USD,LEVB (Bought),,,263,3.7954,,-998.1902,-1.315,999.5052,0,-19.8302,
+Trades,Data,Order,Stocks,USD,LQDA,"2018-11-13, 12:52:27",-,103,19.35,19.32,-1993.05,-1,1994.05,0,-3.09,O;P
+Trades,Data,Trade,Stocks,USD,LQDA,"2018-11-13, 12:52:27",ISLAND,10,19.35,19.32,-193.5,-1,194.5,0,-0.3,O;P
+Trades,Data,Trade,Stocks,USD,LQDA,"2018-11-13, 12:52:41",BATS,93,19.35,19.32,-1799.55,0,1799.55,0,-2.79,O;P
+Trades,SubTotal,,Stocks,USD,LQDA (Bought),,,103,19.35,,-1993.05,-1,1994.05,0,-3.09,
+Trades,Data,Order,Stocks,USD,LQDA,"2018-11-19, 10:35:40",-,-103,21.760666019,21.61,2241.3486,-1.041394532,-1994.05,246.257205,15.5186,C;P
+Trades,Data,Trade,Stocks,USD,LQDA,"2018-11-19, 10:35:40",ISLAND,-100,21.78,21.61,2178,-1.040214,-1936,240.959786,17,C;P
+Trades,Data,ClosedLot,Stocks,USD,LQDA,2018-11-13,,100,19.36,,,,1936,240.959786,,ST
+Trades,Data,Trade,Stocks,USD,LQDA,"2018-11-19, 10:35:50",IBKRATS,-3,21.1162,21.61,63.3486,-0.001180532,-58.05,5.297419,-1.4814,C;P
+Trades,Data,ClosedLot,Stocks,USD,LQDA,2018-11-13,,3,19.35,,,,58.05,5.297419,,ST
+Trades,SubTotal,,Stocks,USD,LQDA (Sold),,,-103,21.760666019,,2241.3486,-1.041394532,-1994.05,246.257205,15.5186,
+Trades,SubTotal,,Stocks,USD,LQDA,,,0,,,248.2986,-2.041394532,0,246.257205,12.4286,
+Trades,Data,Order,Stocks,USD,MGTA,"2018-11-13, 12:48:38",-,264,7.55,6.87,-1993.2,-1.32,1994.52,0,-179.52,O
+Trades,Data,Trade,Stocks,USD,MGTA,"2018-11-13, 12:48:38",ISLAND,264,7.55,6.87,-1993.2,-1.32,1994.52,0,-179.52,O
+Trades,SubTotal,,Stocks,USD,MGTA (Bought),,,264,7.55,,-1993.2,-1.32,1994.52,0,-179.52,
+Trades,Data,Order,Stocks,USD,MGTA,"2018-11-19, 15:53:48",-,-264,7.65,7.65,2019.6,-1.3776708,-1994.52,23.702329,0,C;P
+Trades,Data,Trade,Stocks,USD,MGTA,"2018-11-19, 15:53:48",ISLAND,-18,7.65,7.65,137.7,-1.0039321,-135.99,0.706068,-0,C;P
+Trades,Data,ClosedLot,Stocks,USD,MGTA,2018-11-13,,18,7.555,,,,135.99,0.706068,,ST
+Trades,Data,Trade,Stocks,USD,MGTA,"2018-11-19, 15:54:04",ISLAND,-246,7.65,7.65,1881.9,-0.3737387,-1858.53,22.996261,0,C;P
+Trades,Data,ClosedLot,Stocks,USD,MGTA,2018-11-13,,246,7.555,,,,1858.53,22.996261,,ST
+Trades,SubTotal,,Stocks,USD,MGTA (Sold),,,-264,7.65,,2019.6,-1.3776708,-1994.52,23.702329,0,
+Trades,SubTotal,,Stocks,USD,MGTA,,,0,,,26.4,-2.6976708,0,23.702329,-179.52,
+Trades,Data,Order,Stocks,USD,MOTS,"2018-11-20, 12:56:16",-,100,3.15,3.05,-315,-1,316,0,-10,O
+Trades,Data,Trade,Stocks,USD,MOTS,"2018-11-20, 12:56:16",ISLAND,100,3.15,3.05,-315,-1,316,0,-10,O
+Trades,SubTotal,,Stocks,USD,MOTS (Bought),,,100,3.15,,-315,-1,316,0,-10,
+Trades,Data,Order,Stocks,USD,SIC,"2018-11-13, 12:46:32",-,232,8.595,8.595,-1994.04,-1.16,1995.2,0,0,O
+Trades,Data,Trade,Stocks,USD,SIC,"2018-11-13, 12:46:32",ISLAND,232,8.595,8.595,-1994.04,-1.16,1995.2,0,0,O
+Trades,SubTotal,,Stocks,USD,SIC (Bought),,,232,8.595,,-1994.04,-1.16,1995.2,0,0,
+Trades,Data,Order,Stocks,USD,SVVC,"2018-11-20, 13:05:33",-,79,12.6,13.35,-995.4,-1,996.4,0,59.25,O
+Trades,Data,Trade,Stocks,USD,SVVC,"2018-11-20, 13:05:33",ISLAND,79,12.6,13.35,-995.4,-1,996.4,0,59.25,O
+Trades,SubTotal,,Stocks,USD,SVVC (Bought),,,79,12.6,,-995.4,-1,996.4,0,59.25,
+Trades,Data,Order,Stocks,USD,TBIO,"2018-11-13, 11:04:37",-,90,6.25,6.29,-562.5,-1,563.5,0,3.6,O
+Trades,Data,Trade,Stocks,USD,TBIO,"2018-11-13, 11:04:37",ISLAND,90,6.25,6.29,-562.5,-1,563.5,0,3.6,O
+Trades,SubTotal,,Stocks,USD,TBIO (Bought),,,90,6.25,,-562.5,-1,563.5,0,3.6,
+Trades,Data,Order,Stocks,USD,TBIO,"2018-11-19, 09:30:00",-,-90,6.6,6.84,594,-1.018432,-563.5,29.481568,-21.6,C
+Trades,Data,Trade,Stocks,USD,TBIO,"2018-11-19, 09:30:00",ISLAND,-90,6.6,6.84,594,-1.018432,-563.5,29.481568,-21.6,C
+Trades,Data,ClosedLot,Stocks,USD,TBIO,2018-11-13,,90,6.261111111,,,,563.5,29.481568,,ST
+Trades,SubTotal,,Stocks,USD,TBIO (Sold),,,-90,6.6,,594,-1.018432,-563.5,29.481568,-21.6,
+Trades,SubTotal,,Stocks,USD,TBIO,,,0,,,31.5,-2.018432,0,29.481568,-18,
+Trades,Total,,Stocks,USD,,,,,,,-9474.8681,-33.034316477,9375.8552,373.517513,-583.3937, 
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Exchange,Quantity,T. Price,C. Price,Proceeds,Comm in USD,,,MTM in USD,Code
+Trades,Data,Order,Forex,SGD,USD.SGD,"2018-05-03, 02:21:18",-,"64,314",1.33295,0,-85727.3463,-2.00817144,,,-91.240728,
+Trades,Data,Trade,Forex,SGD,USD.SGD,"2018-05-03, 02:21:18",IDEALFX,"64,314",1.33295,0,-85727.3463,-2.00817144,,,-91.240728,
+Trades,SubTotal,,Forex,SGD,USD.SGD (Bought),,,64314,1.33295,,-85727.3463,-2.00817144,,,-91.240728,
+Trades,Total,,Forex,SGD,,,,,,,-85727.3463,-2.00817144,,,-91.240728, 
+Trades,Total,,Forex,USD,,,,,,,-64405.240728264,-2.00817144,,,-91.240728, 
+"No exercises, assignments or expirations for January 1, 2018 - November 20, 2018"
+Forex P/L Details,Header,Asset Category,Currency,Description,Date/Time,FX Currency,Quantity,Proceeds in USD,Basis in USD,Realized P/L in USD,Code
+Forex P/L Details,Data,Forex,USD,Net cash activity,"2018-01-03, 18:29:04",SGD,-10.69,8.039842,-7.955605,0.084237,C
+Forex P/L Details,Data,Forex,USD,Closed Lot: Net cash activity,"2017-12-20, 21:16:31",SGD,-10.69,8.039842,-7.955605,0.084237,
+Forex P/L Details,Data,Forex,USD,Net cash activity,"2018-02-05, 19:21:54",SGD,-26.24,19.851872,-19.52807,0.323802,C
+Forex P/L Details,Data,Forex,USD,Closed Lot: Net cash activity,"2017-12-20, 21:16:31",SGD,-26.24,19.851872,-19.52807,0.323802,
+Forex P/L Details,Data,Forex,USD,Net cash activity,"2018-03-06, 19:29:19",SGD,-11.11,8.440489,-8.268173,0.172316,C
+Forex P/L Details,Data,Forex,USD,Closed Lot: Net cash activity,"2017-12-20, 21:16:31",SGD,-11.11,8.440489,-8.268173,0.172316,
+Forex P/L Details,Data,Forex,USD,Net cash activity,2018-05-02,SGD,50000,37412,-37412,0,O
+Forex P/L Details,Data,Forex,USD,Net cash activity,2018-05-03,SGD,35732.07,26844.78955,-26844.78955,0,O
+Forex P/L Details,Data,Forex,USD,Forex 64314 USD.SGD,"2018-05-03, 02:21:18",SGD,-85730.0193,64314,-64255.2489,58.7511,C
+Forex P/L Details,Data,Forex,USD,Closed Lot: Net cash activity,2018-05-03,SGD,-35730.0193,26804.385209,-26843.2489,-38.863691,
+Forex P/L Details,Data,Forex,USD,Closed Lot: Net cash activity,2018-05-02,SGD,-50000,37509.614791,-37412,97.614791,
+Forex P/L Details,Data,Forex,USD,Net cash activity,"2018-06-05, 18:37:51",SGD,-2.05,1.535942,-1.540124,-0.004182,C
+Forex P/L Details,Data,Forex,USD,Closed Lot: Net cash activity,2018-05-03,SGD,-2.05,1.535942,-1.540124,-0.004182,
+Forex P/L Details,Data,Total,,,,,,128608.657695,-128549.330422,59.327273,
+Commission Details,Header,Asset Category,Currency,Symbol,Date/Time,Quantity,Commission ,Broker Charges Execution,Broker Charges Clearing,Third-Party Charges Execution,Third-Party Charges Clearing,Third-Party Charges Transaction Fee,Other
+Commission Details,Data,Stocks,USD,ACU,"2018-11-02, 13:48:55",37,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,ACU,"2018-11-06, 14:57:08",-1,-1.00035235,-1,0,0,0,-0.000352,0
+Commission Details,Data,Stocks,USD,ACU,"2018-11-06, 15:33:21",-36,-0.0126846,0,0,0,0,-0.012685,0
+Commission Details,Data,Stocks,USD,ALNA,"2018-11-02, 15:54:43",80,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,ALNA,"2018-11-08, 13:57:49",-80,-1.018256,-1,0,0,0,-0.018256,0
+Commission Details,Data,Stocks,USD,ALNA,"2018-11-13, 10:53:21",243,-1.215,-1.215,0,0,0,0,0
+Commission Details,Data,Stocks,USD,ALNA,"2018-11-19, 10:36:17",-143,-0.24787427,-0.215,0,0,0,-0.032874,0
+Commission Details,Data,Stocks,USD,ALNA,"2018-11-19, 10:36:17",-100,-1.022989,-1,0,0,0,-0.022989,0
+Commission Details,Data,Stocks,USD,ALPN,"2018-11-02, 15:55:47",50,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,ALPN,"2018-11-12, 13:56:17",-100,-1.0184,-1,0,0,0,-0.0184,0
+Commission Details,Data,Stocks,USD,ALPN,"2018-11-13, 10:09:43",-10,-1.0018595,-1,0,0,0,-0.00186,0
+Commission Details,Data,Stocks,USD,ALPN,"2018-11-13, 10:21:36",-23,-0.004232,0,0,0,0,-0.004232,0
+Commission Details,Data,Stocks,USD,BXG,"2018-11-06, 11:37:04",55,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,BXG,"2018-11-14, 10:08:11",-155,-1.042789625,-1,0,0,0,-0.04279,0
+Commission Details,Data,Stocks,USD,BXG,"2018-11-19, 11:03:25",85,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,CUE,"2018-11-05, 09:42:48",10,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,CUE,"2018-11-05, 09:42:59",53,-0.3975,-0.3975,0,0,0,0,0
+Commission Details,Data,Stocks,USD,CUE,"2018-11-05, 09:42:59",210,-0.65,-0.65,0,0,0,0,0
+Commission Details,Data,Stocks,USD,CUE,"2018-11-08, 09:30:00",-273,-1.42502724,-1.365,0,0,0,-0.060027,0
+Commission Details,Data,Stocks,USD,FTNW,"2018-11-05, 09:34:38",216,-1.62,-1.62,0,0,0,0,0
+Commission Details,Data,Stocks,USD,FTNW,"2018-11-13, 10:34:29",-216,-1.12485456,-1.08,0,0,0,-0.044855,0
+Commission Details,Data,Stocks,USD,FTNW,"2018-11-20, 13:24:18",180,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,KNSA,"2018-11-13, 11:07:53",100,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,LAZY,"2018-11-13, 11:04:11",200,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,LEVB,"2018-11-19, 13:18:28",263,-1.315,-1.315,0,0,0,0,0
+Commission Details,Data,Stocks,USD,LQDA,"2018-11-13, 12:52:27",10,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,LQDA,"2018-11-19, 10:35:40",-100,-1.040214,-1,0,0,0,-0.040214,0
+Commission Details,Data,Stocks,USD,LQDA,"2018-11-19, 10:35:50",-3,-0.001180532,0,0,0,0,-0.001181,0
+Commission Details,Data,Stocks,USD,MGTA,"2018-11-13, 12:48:38",264,-1.32,-1.32,0,0,0,0,0
+Commission Details,Data,Stocks,USD,MGTA,"2018-11-19, 15:53:48",-18,-1.0039321,-1,0,0,0,-0.003932,0
+Commission Details,Data,Stocks,USD,MGTA,"2018-11-19, 15:54:04",-246,-0.3737387,-0.32,0,0,0,-0.053739,0
+Commission Details,Data,Stocks,USD,MOTS,"2018-11-20, 12:56:16",100,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,SIC,"2018-11-13, 12:46:32",232,-1.16,-1.16,0,0,0,0,0
+Commission Details,Data,Stocks,USD,SVVC,"2018-11-20, 13:05:33",79,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,TBIO,"2018-11-13, 11:04:37",90,-1,-1,0,0,0,0,0
+Commission Details,Data,Stocks,USD,TBIO,"2018-11-19, 09:30:00",-90,-1.018432,-1,0,0,0,-0.018432,0
+Commission Details,Data,Total,,,,,-33.034316477,-32.6575,0,0,0,-0.376818,0
+MTM P&L On Previous  Period's Positions,Header,Asset Category,Currency,Symbol,Description,Date,Price,MTM P&L On Previous  Period's Positions
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ACU,ACME UNITED CORP,,17.8894,5.8756
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ACU,ACME UNITED CORP,2018-11-05,17.75,-4.44
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ACU,ACME UNITED CORP,2018-11-06,18.0288,10.3156
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,,8.15375,-19.77
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,2018-11-05,7.81,-37.6
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,2018-11-06,7.68,-10.4
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,2018-11-07,7.93,20
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,2018-11-08,8.61,54.4
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,2018-11-14,7.88,-116.64
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,2018-11-15,8.54,160.38
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,2018-11-16,8.61,17.01
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALNA,ALLENA PHARMACEUTICALS INC,2018-11-19,8.17,-106.92
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,,4.890385714,53.21
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,2018-11-05,4.72,-6.65
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,2018-11-06,4.7601,5.33
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,2018-11-07,4.8226,8.32
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,2018-11-08,4.81,-1.68
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,2018-11-09,4.8,-1.33
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,2018-11-12,5.18,50.54
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,ALPN,ALPINE IMMUNE SCIENCES INC,2018-11-13,5.14,-1.32
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,,11.831428571,-49.9
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,2018-11-07,12.46,96.1
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,2018-11-08,12.5,6.2
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,2018-11-09,11.85,-100.75
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,2018-11-12,11.68,-26.35
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,2018-11-13,11.7,3.1
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,2018-11-14,11.88,27.9
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,BXG,BLUEGREEN VACATIONS CORP,2018-11-20,10.75,-56.1
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,CUE,CUE BIOPHARMA INC,,7.2,-43.68
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,CUE,CUE BIOPHARMA INC,2018-11-06,7.01,-128.31
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,CUE,CUE BIOPHARMA INC,2018-11-07,7.27,70.98
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,CUE,CUE BIOPHARMA INC,2018-11-08,7.32,13.65
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,FTNW,FTE NETWORKS INC,,7.652366667,-291.6
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,FTNW,FTE NETWORKS INC,2018-11-06,8.2,-21.6
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,FTNW,FTE NETWORKS INC,2018-11-07,8.41,45.36
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,FTNW,FTE NETWORKS INC,2018-11-08,8.0092,-86.57
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,FTNW,FTE NETWORKS INC,2018-11-09,7.185,-178.03
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,FTNW,FTE NETWORKS INC,2018-11-12,7.16,-5.4
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,FTNW,FTE NETWORKS INC,2018-11-13,6.95,-45.36
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,KNSA,KINIKSA PHARMACEUTICALS-A,,17.064,9.9
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,KNSA,KINIKSA PHARMACEUTICALS-A,2018-11-14,17.09,92.4
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,KNSA,KINIKSA PHARMACEUTICALS-A,2018-11-15,18.15,116.6
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,KNSA,KINIKSA PHARMACEUTICALS-A,2018-11-16,17.47,-74.8
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,KNSA,KINIKSA PHARMACEUTICALS-A,2018-11-19,16.27,-132
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,KNSA,KINIKSA PHARMACEUTICALS-A,2018-11-20,16.34,7.7
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LAZY,LAZYDAYS HOLDINGS INC,,5.182,-70
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LAZY,LAZYDAYS HOLDINGS INC,2018-11-14,5.15,-70
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LAZY,LAZYDAYS HOLDINGS INC,2018-11-15,5.36,42
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LAZY,LAZYDAYS HOLDINGS INC,2018-11-16,4.95,-82
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LAZY,LAZYDAYS HOLDINGS INC,2018-11-19,5.3,70
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LAZY,LAZYDAYS HOLDINGS INC,2018-11-20,5.15,-30
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LEVB,LEVEL BRANDS INC,,3.66,-15.78
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LEVB,LEVEL BRANDS INC,2018-11-20,3.66,-15.78
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LQDA,LIQUIDIA TECHNOLOGIES INC,,22.155,235.87
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LQDA,LIQUIDIA TECHNOLOGIES INC,2018-11-14,22.15,291.49
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LQDA,LIQUIDIA TECHNOLOGIES INC,2018-11-15,22.58,44.29
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LQDA,LIQUIDIA TECHNOLOGIES INC,2018-11-16,22.28,-30.9
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,LQDA,LIQUIDIA TECHNOLOGIES INC,2018-11-19,21.61,-69.01
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,MGTA,MAGENTA THERAPEUTICS INC,,7.3125,205.92
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,MGTA,MAGENTA THERAPEUTICS INC,2018-11-14,6.66,-55.44
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,MGTA,MAGENTA THERAPEUTICS INC,2018-11-15,7.17,134.64
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,MGTA,MAGENTA THERAPEUTICS INC,2018-11-16,7.77,158.4
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,MGTA,MAGENTA THERAPEUTICS INC,2018-11-19,7.65,-31.68
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,SIC,SELECT INTERIOR CONCEPTS-A,,8.28,-135.72
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,SIC,SELECT INTERIOR CONCEPTS-A,2018-11-14,8.45,-33.64
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,SIC,SELECT INTERIOR CONCEPTS-A,2018-11-16,8.44,-2.32
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,SIC,SELECT INTERIOR CONCEPTS-A,2018-11-19,8.22,-51.04
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,SIC,SELECT INTERIOR CONCEPTS-A,2018-11-20,8.01,-48.72
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,TBIO,TRANSLATE BIO INC,,6.72,49.5
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,TBIO,TRANSLATE BIO INC,2018-11-14,5.91,-34.2
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,TBIO,TRANSLATE BIO INC,2018-11-15,7.33,127.8
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,TBIO,TRANSLATE BIO INC,2018-11-16,6.8,-47.7
+MTM P&L On Previous  Period's Positions,Data,Stocks,USD,TBIO,TRANSLATE BIO INC,2018-11-19,6.84,3.6
+MTM P&L On Previous  Period's Positions,Data,Total,,,,,,-66.1744
+Deposits & Withdrawals,Header,Currency,Settle Date,Description,Amount
+Deposits & Withdrawals,Data,SGD,2018-05-02,Electronic Fund Transfer,50000
+Deposits & Withdrawals,Data,SGD,2018-05-03,Electronic Fund Transfer,35732.07
+Deposits & Withdrawals,Data,Total,,,85732.07
+Deposits & Withdrawals,Data,Total in USD,,,64256.7895496
+Deposits & Withdrawals,Data,USD,2018-05-09,Disbursement Initiated by Ching Jui Young,-64314
+Deposits & Withdrawals,Data,USD,2018-10-30,Electronic Fund Transfer,10000
+Deposits & Withdrawals,Data,USD,2018-11-01,Electronic Fund Transfer,10000
+Deposits & Withdrawals,Data,Total,,,-44314
+Deposits & Withdrawals,Data,Total Deposits & Withdrawals in USD,,,19942.7895496
+Fees,Header,Subtitle,Currency,Date,Description,Amount
+Fees,Data,Other Fees,SGD,2018-01-03,Balance of Monthly Minimum Fee for Dec 2017,-10.69
+Fees,Data,Other Fees,SGD,2018-02-05,Balance of Monthly Minimum Fee for Jan 2018,-26.24
+Fees,Data,Other Fees,SGD,2018-03-06,Balance of Monthly Minimum Fee for Feb 2018,-11.11
+Fees,Data,Other Fees,SGD,2018-06-05,Balance of Monthly Minimum Fee for May 2018,-2.05
+Fees,Data,Total,,,,-50.09
+Fees,Data,Total in USD,,,,-37.8681453
+Fees,Data,Other Fees,USD,2018-11-02,Balance of Monthly Minimum Fee for Oct 2018,-20
+Fees,Data,Other Fees,USD,2018-11-05,Order Cancellation Fee for Nov 2018,-0.02
+Fees,Data,Other Fees,USD,2018-11-05,y******41:US Equity and Options Add-On Streaming Bundle Non-Professional for Nov 2018,-4.5
+Fees,Data,Other Fees,USD,2018-11-05,y******41:US Securities Snapshot and Futures Value Bundle Non-Professional for Nov 2018,-10
+Fees,Data,Other Fees,USD,2018-11-20,Order Cancellation Fee for Nov 2018,-0.01
+Fees,Data,Total,,,,-34.53
+Fees,Data,Total Other Fees in USD,,,,-72.3981453
+Other Fees,Header,Currency,Date,Description,Amount,Code
+Other Fees,Data,SGD,2018-01-03,Balance of Monthly Minimum Fee for Dec 2017,-10.69,
+Other Fees,Data,SGD,2018-02-05,Balance of Monthly Minimum Fee for Jan 2018,-26.24,
+Other Fees,Data,SGD,2018-03-06,Balance of Monthly Minimum Fee for Feb 2018,-11.11,
+Other Fees,Data,SGD,2018-06-05,Balance of Monthly Minimum Fee for May 2018,-2.05,
+Other Fees,Data,Total,,,,-50.09,
+Other Fees,Data,Total in USD,,,,-37.8681453,
+Other Fees,Data,USD,2018-11-02,Balance of Monthly Minimum Fee for Oct 2018,-20,
+Other Fees,Data,USD,2018-11-05,Order Cancellation Fee for Nov 2018,-0.02,
+Other Fees,Data,USD,2018-11-05,y******41:US Equity and Options Add-On Streaming Bundle Non-Professional for Nov 2018,-4.5,
+Other Fees,Data,USD,2018-11-05,y******41:US Securities Snapshot and Futures Value Bundle Non-Professional for Nov 2018,-10,
+Other Fees,Data,USD,2018-11-20,Order Cancellation Fee for Nov 2018,-0.01,
+Other Fees,Data,Total,,,,-34.53,
+Other Fees,Data,Total Other Fees in USD,,,,-72.3981453,
+Deposits & Withdrawals,Header,Currency,Settle Date,Description,Amount,Code
+Deposits & Withdrawals,Data,SGD,2018-05-02,Electronic Fund Transfer,50000,
+Deposits & Withdrawals,Data,SGD,2018-05-03,Electronic Fund Transfer,35732.07,
+Deposits & Withdrawals,Data,Total,,,85732.07,
+Deposits & Withdrawals,Data,Total in USD,,,64256.7895496,
+Deposits & Withdrawals,Data,USD,2018-05-08,Disbursement Initiated by Ching Jui Young,-64314,
+Deposits & Withdrawals,Data,USD,2018-10-30,Electronic Fund Transfer,10000,
+Deposits & Withdrawals,Data,USD,2018-11-01,Electronic Fund Transfer,10000,
+Deposits & Withdrawals,Data,Total,,,-44314,
+Deposits & Withdrawals,Data,Total Deposits & Withdrawals in USD,,,19942.7895496,
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Security ID,Multiplier,Code
+Financial Instrument Information,Data,Stocks,ACU,ACME UNITED CORP,764373,,1,
+Financial Instrument Information,Data,Stocks,ALNA,ALLENA PHARMACEUTICALS INC,294729588,,1,
+Financial Instrument Information,Data,Stocks,ALPN,ALPINE IMMUNE SCIENCES INC,283770143,,1,
+Financial Instrument Information,Data,Stocks,BXG,BLUEGREEN VACATIONS CORP,296320248,,1,
+Financial Instrument Information,Data,Stocks,CUE,CUE BIOPHARMA INC,300465612,,1,
+Financial Instrument Information,Data,Stocks,FTNW,FTE NETWORKS INC,295154154,,1,
+Financial Instrument Information,Data,Stocks,KNSA,KINIKSA PHARMACEUTICALS-A,319099329,BMG5269C1010,1,
+Financial Instrument Information,Data,Stocks,LAZY,LAZYDAYS HOLDINGS INC,310624804,,1,
+Financial Instrument Information,Data,Stocks,LEVB,LEVEL BRANDS INC,296466062,,1,
+Financial Instrument Information,Data,Stocks,LQDA,LIQUIDIA TECHNOLOGIES INC,327422071,,1,
+Financial Instrument Information,Data,Stocks,MGTA,MAGENTA THERAPEUTICS INC,322592376,,1,
+Financial Instrument Information,Data,Stocks,MOTS,MOTUS GI HOLDINGS INC,306363711,,1,
+Financial Instrument Information,Data,Stocks,SIC,SELECT INTERIOR CONCEPTS-A,329820282,,1,
+Financial Instrument Information,Data,Stocks,SVVC,FIRSTHAND TECHNOLOGY VALUE,86823361,,1,
+Financial Instrument Information,Data,Stocks,TBIO,TRANSLATE BIO INC,324062330,,1,
+Codes,Header,Code,Meaning,Code (Cont.),Meaning (Cont.)
+Codes,Data,A,Assignment
+Codes,Data,AEx,Automatic exercise for dividend-related recommendation.
+Codes,Data,Adj,Adjustment
+Codes,Data,Al,Allocation
+Codes,Data,Aw,Away Trade
+Codes,Data,B,Automatic Buy-in
+Codes,Data,Bo,Direct Borrow
+Codes,Data,C,Closing Trade
+Codes,Data,CD,Cash Delivery
+Codes,Data,CP,Complex Position
+Codes,Data,Ca,Cancelled
+Codes,Data,Co,Corrected Trade
+Codes,Data,Cx,Part or all of this transaction was a Crossing executed as dual agent by IB for two IB customers
+Codes,Data,ETF,ETF Creation/Redemption
+Codes,Data,Ep,Resulted from an Expired Position
+Codes,Data,Ex,Exercise
+Codes,Data,G,Trade in Guaranteed Account Segment
+Codes,Data,HC,Highest Cost tax basis election
+Codes,Data,HFI,Investment Transferred to Hedge Fund
+Codes,Data,HFR,Redemption from Hedge Fund
+Codes,Data,I,Internal Transfer
+Codes,Data,IA,This transaction was executed against an IB affiliate
+Codes,Data,INV,Investment Transfer from Investor
+Codes,Data,IPO,This transaction was executed as part of an IPO in which IB was a member of the selling group and is classified as a Principal trade.
+Codes,Data,L,Ordered by IB (Margin Violation)
+Codes,Data,LD,Adjusted by Loss Disallowed from Wash Sale
+Codes,Data,LI,"Last In, First Out (LIFO) tax basis election"
+Codes,Data,LT,Long Term P/L
+Codes,Data,Lo,Direct Loan
+Codes,Data,M,Entered manually by IB
+Codes,Data,MEx,Manual exercise for dividend-related recommendation.
+Codes,Data,ML,Maximize Losses tax basis election
+Codes,Data,MLG,Maximize Long Term Gain tax basis election
+Codes,Data,MLL,Maximize Long Term Loss tax basis election
+Codes,Data,MSG,Maximize Short Term Gain tax basis election
+Codes,Data,MSL,Maximize Short Term Loss tax basis election
+Codes,Data,O,Opening Trade
+Codes,Data,P,Partial Execution
+Codes,Data,PI,Price Improvement
+Codes,Data,Po,Interest or Dividend Accrual Posting
+Codes,Data,Pr,Part or all of this transaction was executed by the Exchange as a Crossing by IB against an IB affiliate and is therefore classified as a Principal and not an agency trade
+Codes,Data,R,Dividend Reinvestment
+Codes,Data,RED,Redemption to Investor
+Codes,Data,Re,Interest or Dividend Accrual Reversal
+Codes,Data,Ri,Reimbursement
+Codes,Data,SI,This order was solicited by Interactive Brokers
+Codes,Data,SL,Specific Lot tax basis election
+Codes,Data,SO,This order was marked as solicited by your Introducing Broker
+Codes,Data,SS,Customer designated this trade for shortened settlement and so is subject to execution at prices above the prevailing market
+Codes,Data,ST,Short Term P/L
+Codes,Data,SY,Positions that may be eligible for Stock Yield. Potential for additional annualized income of 93.60 USD
+Codes,Data,T,Transfer
+Notes/Legal Notes,Header,Type,Note
+Notes/Legal Notes,Data,Notes,"Most stock exchange transactions settle on the trade date plus two business days. Options, futures and US open-end mutual fund transactions settle on trade date plus one business day. (Some exchanges and other transaction types may have longer or shorter settlement periods.) Ending settled cash reflects the cash that has actually settled."
+Notes/Legal Notes,Data,Notes,Initial and maintenance margin requirements are available within the Account Window of the Trader Workstation.
+Notes/Legal Notes,Data,Notes,"Interactive Brokers LLC receives compensation from fund companies in connection with the purchase and holding of fund shares by customers of Interactive Brokers LLC. Such compensation includes, but is not limited to, Rule 12b-1 fees that are paid out of the funds assets. The source and amount of any remuneration received by Interactive Brokers LLC in connection with a transaction will be furnished upon written request of the customer.  IB may share a portion of the compensation received from fund companies with your financial advisor or introducing broker."
+Notes/Legal Notes,Data,Notes,Quantities preceded by a "-" sign indicate sell transactions. Other transactions are purchases. 
+Notes/Legal Notes,Data,Notes,"In case of partial executions, commissions are charged on the total quantity executed on the original order. The commission is displayed on the first partial execution only."
+Notes/Legal Notes,Data,Notes,Each closed lot indicated above with a reference to note (6) was chosen by the end of the trading day to be sold versus the specific opening purchase identified in that row.
+Notes/Legal Notes,Data,Notes,Trade execution times are displayed in Eastern Time.
+Notes/Legal Notes,Data,Notes,Applicable commodity Regulatory Fees for your transactions are available on the IB website at www.interactivebrokers.com/en/accounts/fees/exchangeAndRegulatoryFees.php.
+Notes/Legal Notes,Data,Notes,"Borrow Fee Rate represents the cost to borrow stock expressed in percent per annum. It is applied to the cash collateral amount on the stock borrow contract and is separate from any interest earned on credit cash balances. Similarly, Loan Fee Rate represents the benefit to lend stock. A positive rate indicates a cost to the borrower/benefit to the lender and a negative rate indicates a benefit to the borrower/cost to the lender. In general, the fee rates for hard-to-borrow stocks are higher than for normal availability stocks."
+Notes/Legal Notes,Data,Notes,Interest Rate on Customer Collateral represents the interest paid on the collateral posted to the customer's account and received from lending stock.  A positive rate indicates a benefit to the lender.
+Notes/Legal Notes,Data,Notes,"The closing prices on this Activity Statement are indicative and may come from third-party sources. Interactive Brokers does not warrant the accuracy of the prices provided by third-party sources. Due to time zone differences, certain non-US mutual funds may deliver closing prices after the Activity Statement has been produced and the closing prices for such funds will reflect the previous day's price."
+Notes/Legal Notes,Data,Notes,"Additional information about your retail Forex transactions is available in Account Management, including information required under NFA Rule 2-36(o) about retail Forex trades in the same currency pair as any retail leveraged Forex transaction you executed in your IB account. We can provide this information for trades executed within the 15 minutes immediately before and after your trade. This information is available for a period of 6 months after your trade."
+Notes/Legal Notes,Data,Fixed Income Notes,"Call features for bonds or preferred stocks may affect the yield. For zero coupon, compound interest and multiplier securities, there are no periodic payments and securities may be callable below maturity value without notice to holder unless registered. For asset-backed securities, the actual yield may vary depending on the speed at which the underlying note is pre-paid. For additional information regarding bond yield, please contact the IB Help Desk at: help@interactivebrokers.com. If this debt security is unrated by a nationally recognized statistical rating organization, it may pose a high risk of default. You should consult a financial advisor to determine whether unrated bonds are appropriate for your portfolio in light of your goals and your financial circumstances. Fees charged by bond trading centers are included in the cost of bond transactions."
+Notes/Legal Notes,Data,Legal Notes,"Please promptly report any inaccuracy or discrepancy in this statement, or in your account. Contact the IB Customer Service Department in writing using the form available on the IB website. You may also contact IB by phone, but if you report an error by phone, you should re-confirm such oral communication in writing in order to protect your rights, including rights under the Securities Investor Protection Act (SIPA).Interactive Brokers LLC, www.interactivebrokers.com, 877-442-2757 (U.S.)Interactive Brokers (UK) (Ltd), www.interactivebrokers.co.uk, 00800-42-276537 (Intl)Interactive Brokers Canada Inc., www.interactivebrokers.ca, 877-745-4222 (Can.)"
+Notes/Legal Notes,Data,Legal Notes,"Unless otherwise noted, Interactive Brokers acted as agent in the execution of the above transactions. For those exchanges where IB is not a direct clearing member or custodian, IB may use one of the following clearing agents or sub-custodians: Interactive Brokers Australia Pty Limited; Interactive Brokers Canada Inc.; Interactive Brokers Hong Kong Limited; Interactive Brokers Securities Japan, Inc.; Interactive Brokers (U.K.) Limited; Timber Hill Europe AG; ABN Amro Clearing Singapore Pte. Ltd.; ABN Amro Clearing Sydney Pty Ltd.; BBVA Bancomer, S.A.; BNP Securities Services, Milan Branch; BMO Harris Bank N.A.; Citibank International plc; Euroclear Bank S.A./N.V.; Shinhan Securities Co., Ltd.; Skandinaviska Enskilda Banken AB.; Skandinaviska Enskilda Merchang Banking, Oslo Branch"
+Notes/Legal Notes,Data,Legal Notes,"IB acts as agent or riskless principal in foreign currency exchange transactions.  Such transactions are executed against an IB affiliate or a third party, which acts as principal in such transactions and may have a long or short position and may have profited or lost in connection with the transaction.  Foreign currency exchange transactions executed by Customer through IB are not regulated or overseen by the SEC or the CFTC."
+Notes/Legal Notes,Data,Legal Notes,"Trades marked with the exchange indicator of TMBR were effected by IB as agent through a market making affiliate, which acted as principal in the transaction and may have a long or short position in the security and may have profited or lost in connection with the transaction."
+Notes/Legal Notes,Data,Legal Notes,"All VWAP trades are effected pursuant to an average price formula based on a reference price provided by a third-party data provider. Additional information and reference prices are available upon request. IB, as agent, effects VWAP transactions through a market making affiliate, which acts as principal in such transactions and may have a long or short position in the security and may have profited or lost in connection with the transaction."
+Notes/Legal Notes,Data,Legal Notes,"IB accepts liquidity rebates or other order flow payments from Alternative Trading Systems, market makers and exchanges for certain orders in stocks. IB receives payment for some option orders pursuant to exchange-mandated marketing fee programs or other arrangements. To the extent permissible under exchange rules, IB may direct customer option orders for execution against its market making affiliate Timber Hill LLC, which acts as principal and may earn a profit or incur a loss. The source and nature of any compensation received by IB in connection with any transaction is available upon written request of the customer. For further information, check the IB website and the Order Routing and Payment for Order Flow Disclosure provided when you opened your account and annually or email help@interactivebrokers.com."
+Notes/Legal Notes,Data,Legal Notes,"For security futures trades, if not already indicated on this statement, information about the time of any transaction, the identity of the counterparty to the transaction, and whether IB is acting as agent or principal, as agent for the counterparty, as agent for both parties to the contract, or as principal, and if acting as principal, whether the transaction was a block transaction or an exchange for physicals transaction, will be available upon written request of the customer."
+Notes/Legal Notes,Data,Legal Notes,Customer is requested to promptly advise Interactive Brokers of any material change in Customer's investment objectives or financial situation.
+Notes/Legal Notes,Data,Legal Notes,"A financial statement of Interactive Brokers LLC is available for your personal inspection at www.interactivebrokers.com or at its offices, or a copy of it will be mailed upon your written request."
+Notes/Legal Notes,Data,Legal Notes,"For trades executed on either the Australian Stock Exchange Ltd (""ASX"") or Chi-X Australia Pty Ltd (""Chi-X""), this confirmation is issued subject to: (i) the directions, decisions and requirements of the Market Operator, the relevant Market Integrity Rules, the relevant Market Operating Rules, the Clearing Rules and where relevant, the Settlement Rules; (ii) the customs and usages of the relevant Market; and (iii) the correction of errors and omissions. Interactive Brokers LLC (ARBN: 091191141, AFSL: 245574, Participant on Chi-X Australia)(""IB"") is not a participant on the ASX, and will route orders to the ASX through its affiliate, Timber Hill Australia Pty Ltd (ABN 25079993534, AFSL: 244380, Participant on the ASX)(""THA"") who executes such orders. Your ASX and Chi-x Australia trades will be cleared through ABN Amro Clearing Sydney Pty Ltd, an ACH participant. If your transaction was a crossing transaction, IB may have either acted on behalf of (i) both the buyer and seller of this transaction, or (ii) on behalf of the buyer or seller on one side of the transaction and act as Principal on the other side. Under the Corporations Act 2001, where IB enters into an exchange traded derivatives on a customer's behalf, IB is regarded as having issued the derivative to the customer."
+Notes/Legal Notes,Data,Legal Notes,"For All Options Trades Executed on the Stock Exchange of Hong Kong (""SEHK""): (a) Options can involve a high degree of risk and may not be suitable for every investor. Investors should ensure they understand those risks before participating in the options market. (b) All options contracts executed on the SEHK were executed by Timber Hill Securities Hong Kong on behalf of Interactive Brokers LLC. (c) In the event of a default committed by Interactive Brokers LLC resulting in the client suffering any pecuniary loss, the client shall have a right to claim under the Investor Compensation Fund established under the Hong Kong Securities and Futures Ordinance, subject to the terms of the Investor Compensation Fund from time to time. (d) All Exchange Traded Options Business made for or on behalf of a client shall be subject to the relevant provisions of the constitution, Rules of The Stock Exchange of Hong Kong Limited (""SEHK Rules""), regulations, the Articles, customs and usages of SEHK, the Options Trading Rules, the Clearing Rules of SEOCH, the CCASS Rules and the laws of Hong Kong, which shall be binding on both Interactive Brokers LLC and the client."
+Notes/Legal Notes,Data,Legal Notes,"Deposits held away from Interactive Brokers LLC may not qualify under SIPC protection.  Also, futures and options on futures are not covered by SIPC."
+Notes/Legal Notes,Data,,SIPC Member

@@ -1,0 +1,250 @@
+﻿Statement,Header,Field Name,Field Value
+Statement,Data,BrokerName,Interactive Brokers
+Statement,Data,BrokerAddress,
+Statement,Data,Title,Activity Statement
+Statement,Data,Period,"October 29, 2018 - November 15, 2018"
+Statement,Data,WhenGenerated,"2018-11-16, 14:59:53 EST"
+Account Information,Header,Field Name,Field Value
+Account Information,Data,Name,Ching Jui Young
+Account Information,Data,Account,U9509931
+Account Information,Data,Account Type,Individual
+Account Information,Data,Customer Type,Individual
+Account Information,Data,Account Capabilities,Margin
+Account Information,Data,Base Currency,USD
+Net Asset Value,Header,Asset Class,Prior Total,Current Long,Current Short,Current Total,Change
+Net Asset Value,Data,Cash ,0.001297159,7837.703845562,0,7837.703845562,7837.702548403
+Net Asset Value,Data,Stock,0,11982.44,0,11982.44,11982.44
+Net Asset Value,Data,Total,0.001297159,19820.143845562,0,19820.143845562,19820.142548403
+Net Asset Value,Header,Time Weighted Rate of Return
+Net Asset Value,Data,-1.165955316%
+Change in NAV,Header,Field Name,Field Value
+Change in NAV,Data,Starting Value,0.001297159
+Change in NAV,Data,Mark-to-Market,-122.32649572
+Change in NAV,Data,Deposits & Withdrawals,20000
+Change in NAV,Data,Other Fees,-34.52
+Change in NAV,Data,Commissions,-23.01095587
+Change in NAV,Data,Ending Value,19820.143845562
+Mark-to-Market Performance Summary,Header,Asset Category,Symbol,Prior Quantity,Current Quantity,Prior Price,Current Price,Mark-to-Market P/L Position,Mark-to-Market P/L Transaction,Mark-to-Market P/L Commissions,Mark-to-Market P/L Other,Mark-to-Market P/L Total,Code
+Mark-to-Market Performance Summary,Data,Stocks,ACU,0,0,--,--,5.8756,2.6344,-2.01303695,0,6.49696305,
+Mark-to-Market Performance Summary,Data,Stocks,ALNA,0,243,--,8.5400,70.14,20.48,-3.233256,0,87.386744,
+Mark-to-Market Performance Summary,Data,Stocks,ALPN,0,0,--,--,53.21,-45.21,-3.0244915,0,4.9755085,
+Mark-to-Market Performance Summary,Data,Stocks,BXG,0,0,--,--,6.2,-125.2865,-2.04278962,0,-121.12928962,
+Mark-to-Market Performance Summary,Data,Stocks,CUE,0,0,--,--,-43.68,169.26,-3.47252724,0,122.10747276,
+Mark-to-Market Performance Summary,Data,Stocks,FTNW,0,0,--,--,-291.6,-233.28,-2.74485456,0,-527.62485456,
+Mark-to-Market Performance Summary,Data,Stocks,KNSA,0,110,--,18.1500,209,-198,-1,0,10,
+Mark-to-Market Performance Summary,Data,Stocks,LAZY,0,200,--,5.3600,-28,10,-1,0,-19,
+Mark-to-Market Performance Summary,Data,Stocks,LQDA,0,103,--,22.5800,335.78,-3.09,-1,0,331.69,
+Mark-to-Market Performance Summary,Data,Stocks,MGTA,0,264,--,7.1700,79.2,-179.52,-1.32,0,-101.64,
+Mark-to-Market Performance Summary,Data,Stocks,SIC,0,232,--,8.4500,-33.64,0,-1.16,0,-34.8,
+Mark-to-Market Performance Summary,Data,Stocks,TBIO,0,90,--,7.3300,93.6,3.6,-1,0,96.2,
+Mark-to-Market Performance Summary,Data,Total,,,,,,456.0856,-578.4121,-23.01095587,0,-145.33745587,
+Mark-to-Market Performance Summary,Data,Forex,USD,0,7837.702544125,1.0000,1.0000,0,0,0,0,0,
+Mark-to-Market Performance Summary,Data,Total,,,,,,0.00000428,0,0,0,0.00000428,
+Mark-to-Market Performance Summary,Data,Total (All Assets),,,,,,456.08560428,-578.4121,-23.01095587,0,-145.33745159,
+Mark-to-Market Performance Summary,Data,Other Fees,,,,,,,,,,-34.52,
+Total P/L for Statement Period,,,,,,,,,,,,-179.85745159,
+Realized & Unrealized Performance Summary,Header,Asset Category,Symbol,Cost Adj.,Realized S/T Profit,Realized S/T Loss,Realized L/T Profit,Realized L/T Loss,Realized Total,Unrealized S/T Profit,Unrealized S/T Loss,Unrealized L/T Profit,Unrealized L/T Loss,Unrealized Total,Total,Code
+Realized & Unrealized Performance Summary,Data,Stocks,ACU,0,7.29434243,-0.79737938,0,0,6.49696305,0,0,0,0,0,6.49696305,
+Realized & Unrealized Performance Summary,Data,Stocks,ALNA,0,5.981744,0,0,0,5.981744,81.405,0,0,0,81.405,87.386744,
+Realized & Unrealized Performance Summary,Data,Stocks,ALPN,0,5.4889405,-0.513432,0,0,4.9755085,0,0,0,0,0,4.9755085,
+Realized & Unrealized Performance Summary,Data,Stocks,BXG,0,0,-121.12928963,0,0,-121.12928963,0,0,0,0,0,-121.12928963,
+Realized & Unrealized Performance Summary,Data,Stocks,CUE,0,122.10747276,0,0,0,122.10747276,0,0,0,0,0,122.10747276,
+Realized & Unrealized Performance Summary,Data,Stocks,FTNW,0,0,-527.62485456,0,0,-527.62485456,0,0,0,0,0,-527.62485456,
+Realized & Unrealized Performance Summary,Data,Stocks,KNSA,0,0,0,0,0,0,10,0,0,0,10,10,
+Realized & Unrealized Performance Summary,Data,Stocks,LAZY,0,0,0,0,0,0,0,-19,0,0,-19,-19,
+Realized & Unrealized Performance Summary,Data,Stocks,LQDA,0,0,0,0,0,0,331.69,0,0,0,331.69,331.69,
+Realized & Unrealized Performance Summary,Data,Stocks,MGTA,0,0,0,0,0,0,0,-101.64,0,0,-101.64,-101.64,
+Realized & Unrealized Performance Summary,Data,Stocks,SIC,0,0,0,0,0,0,0,-34.8,0,0,-34.8,-34.8,
+Realized & Unrealized Performance Summary,Data,Stocks,TBIO,0,0,0,0,0,0,96.2,0,0,0,96.2,96.2,
+Realized & Unrealized Performance Summary,Data,Total,,0,140.87249969,-650.06495557,0,0,-509.19245588,519.295,-155.44,0,0,363.855,-145.33745588,
+Realized & Unrealized Performance Summary,Data,Forex,SGD,0,0,0,0,0,0,0,-0.000017,0,0,-0.000017,-0.000017,
+Realized & Unrealized Performance Summary,Data,Total,,0,0,0,0,0,0,0,-0.000017,0,0,-0.000017,-0.000017,
+Realized & Unrealized Performance Summary,Data,Total (All Assets),,0,140.87249969,-650.06495557,0,0,-509.19245588,519.295,-155.440017,0,0,363.854983,-145.33747288,
+Month & Year to Date Performance Summary,Header,Asset Category,Symbol,Description,Mark-to-Market MTD,Mark-to-Market YTD,Realized S/T MTD,Realized S/T YTD,Realized L/T MTD,Realized L/T YTD
+Month & Year to Date Performance Summary,Data,Stocks,ACU,ACME UNITED CORP,6.49696305,6.49696305,6.49696305,6.49696305,0,0
+Month & Year to Date Performance Summary,Data,Stocks,ALNA,ALLENA PHARMACEUTICALS INC,87.386744,87.386744,5.981744,5.981744,0,0
+Month & Year to Date Performance Summary,Data,Stocks,ALPN,ALPINE IMMUNE SCIENCES INC,4.9755085,4.9755085,4.9755085,4.9755085,0,0
+Month & Year to Date Performance Summary,Data,Stocks,BXG,BLUEGREEN VACATIONS CORP,-121.12928962,-121.12928962,-121.12928963,-121.12928963,0,0
+Month & Year to Date Performance Summary,Data,Stocks,CUE,CUE BIOPHARMA INC,122.10747276,122.10747276,122.10747276,122.10747276,0,0
+Month & Year to Date Performance Summary,Data,Stocks,FTNW,FTE NETWORKS INC,-527.62485456,-527.62485456,-527.62485456,-527.62485456,0,0
+Month & Year to Date Performance Summary,Data,Stocks,KNSA,KINIKSA PHARMACEUTICALS-A,10,10,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,LAZY,LAZYDAYS HOLDINGS INC,-19,-19,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,LQDA,LIQUIDIA TECHNOLOGIES INC,331.69,331.69,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,MGTA,MAGENTA THERAPEUTICS INC,-101.64,-101.64,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,SIC,SELECT INTERIOR CONCEPTS-A,-34.8,-34.8,0,0,0,0
+Month & Year to Date Performance Summary,Data,Stocks,TBIO,TRANSLATE BIO INC,96.2,96.2,0,0,0,0
+Month & Year to Date Performance Summary,Data,Total,,,-145.33745587,-145.33745587,-509.19245588,-509.19245588,0,0
+Month & Year to Date Performance Summary,Data,Total (All Assets),,,-145.33745587,-145.33745587,-509.19245588,-509.19245588,0,0
+Cash Report,Header,Currency Summary,Currency,Total,Securities,Futures,Month to Date,Year to Date,
+Cash Report,Data,Starting Cash,Base Currency Summary,0.001297159,0.001297159,0,,,
+Cash Report,Data,Commissions,Base Currency Summary,-23.01095587,-23.01095587,0,-23.01095587,-25.01912731,
+Cash Report,Data,Deposits,Base Currency Summary,20000,20000,0,10000,84256.7895496,
+Cash Report,Data,Withdrawals,Base Currency Summary,0,0,0,0,-64314,
+Cash Report,Data,Net Trades (Sales),Base Currency Summary,7466.9135,7466.9135,0,7466.9135,71780.9135,
+Cash Report,Data,Net Trades (Purchase),Base Currency Summary,-19571.68,-19571.68,0,-19571.68,-83976.92072826,
+Cash Report,Data,Other Fees,Base Currency Summary,-34.52,-34.52,0,-34.52,-72.3881453,
+Cash Report,Data,Cash FX Translation Gain/Loss,Base Currency Summary,0.00000428,0.00000428,0,,,
+Cash Report,Data,Ending Cash,Base Currency Summary,7837.703845562,7837.703845562,0,,,
+Cash Report,Data,Ending Settled Cash,Base Currency Summary,5965.040345562,5965.040345562,0,,,
+Cash Report,Data,Starting Cash,SGD,0.00179,0.00179,0,,,
+Cash Report,Data,Commissions,SGD,0,0,0,0,-2.673,
+Cash Report,Data,Deposits,SGD,0,0,0,0,85732.07,
+Cash Report,Data,Net Trades (Purchase),SGD,0,0,0,0,-85727.3463,
+Cash Report,Data,Other Fees,SGD,0,0,0,0,-50.09,
+Cash Report,Data,Ending Cash,SGD,0.00179,0.00179,0,,,
+Cash Report,Data,Ending Settled Cash,SGD,0.00179,0.00179,0,,,
+Cash Report,Data,Starting Cash,USD,0,0,0,,,
+Cash Report,Data,Commissions,USD,-23.01095587,-23.01095587,0,-23.01095587,-23.01095587,
+Cash Report,Data,Deposits,USD,20000,20000,0,10000,20000,
+Cash Report,Data,Withdrawals,USD,0,0,0,0,-64314,
+Cash Report,Data,Net Trades (Sales),USD,7466.9135,7466.9135,0,7466.9135,71780.9135,
+Cash Report,Data,Net Trades (Purchase),USD,-19571.68,-19571.68,0,-19571.68,-19571.68,
+Cash Report,Data,Other Fees,USD,-34.52,-34.52,0,-34.52,-34.52,
+Cash Report,Data,Ending Cash,USD,7837.702544125,7837.702544125,0,,,
+Cash Report,Data,Ending Settled Cash,USD,5965.039044125,5965.039044125,0,,,
+Open Positions,Header,DataDiscriminator,Asset Category,Currency,Symbol,Quantity,Mult,Cost Price,Cost Basis,Close Price,Value,Unrealized P/L,Code
+Open Positions,Data,Summary,Stocks,USD,ALNA,243,1,8.205,1993.815,8.54,2075.22,81.405,
+Open Positions,Data,Summary,Stocks,USD,KNSA,110,1,18.059090909,1986.5,18.15,1996.5,10,
+Open Positions,Data,Summary,Stocks,USD,LAZY,200,1,5.455,1091,5.36,1072,-19,
+Open Positions,Data,Summary,Stocks,USD,LQDA,103,1,19.359708738,1994.05,22.58,2325.74,331.69,
+Open Positions,Data,Summary,Stocks,USD,MGTA,264,1,7.555,1994.52,7.17,1892.88,-101.64,
+Open Positions,Data,Summary,Stocks,USD,SIC,232,1,8.6,1995.2,8.45,1960.4,-34.8,
+Open Positions,Data,Summary,Stocks,USD,TBIO,90,1,6.261111111,563.5,7.33,659.7,96.2,
+Open Positions,Total,,Stocks,USD,,,,,11618.585,,11982.44,363.855,
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
+Trades,Data,Order,Stocks,USD,ACU,"2018-11-02, 13:48:55",37,17.72,17.87,-655.64,-1,656.64,0,5.55,O
+Trades,Data,Order,Stocks,USD,ACU,"2018-11-06, 14:57:08",-37,17.95,18.0288,664.15,-1.01303695,-656.64,6.496963,-2.9156,C;P
+Trades,SubTotal,,Stocks,USD,ACU,,0,,,8.51,-2.01303695,0,6.496963,2.6344,
+Trades,Data,Order,Stocks,USD,ALNA,"2018-11-02, 15:54:43",80,8.3,8.28,-664,-1,665,0,-1.6,O
+Trades,Data,Order,Stocks,USD,ALNA,"2018-11-08, 13:57:49",-80,8.4,8.61,672,-1.018256,-665,5.981744,-16.8,C
+Trades,Data,Order,Stocks,USD,ALNA,"2018-11-13, 10:53:21",243,8.2,8.36,-1992.6,-1.215,1993.815,0,38.88,O
+Trades,SubTotal,,Stocks,USD,ALNA,,243,,,-1984.6,-3.233256,1993.815,5.981744,20.48,
+Trades,Data,Order,Stocks,USD,ALPN,"2018-11-02, 15:55:47",133,4.95112782,4.77,-658.5,-1,659.5,0,-24.09,O;P
+Trades,Data,Order,Stocks,USD,ALPN,"2018-11-12, 13:56:17",-100,5,5.18,500,-1.0184,-494.5,4.4816,-18,C
+Trades,Data,Order,Stocks,USD,ALPN,"2018-11-13, 10:09:43",-33,5.045454545,5.14,166.5,-1.0060915,-165,0.493908,-3.12,C;P
+Trades,SubTotal,,Stocks,USD,ALPN,,0,,,8,-3.0244915,0,4.975508,-45.21,
+Trades,Data,Order,Stocks,USD,BXG,"2018-11-06, 11:37:04",155,12.85,11.84,-1991.75,-1,1992.75,0,-156.55,O;P
+Trades,Data,Order,Stocks,USD,BXG,"2018-11-14, 10:08:11",-155,12.0817,11.88,1872.6635,-1.042789625,-1992.75,-121.12929,31.2635,C
+Trades,SubTotal,,Stocks,USD,BXG,,0,,,-119.0865,-2.042789625,0,-121.12929,-125.2865,
+Trades,Data,Order,Stocks,USD,CUE,"2018-11-05, 09:42:48",273,7.3,7.48,-1992.9,-2.0475,1994.9475,0,49.14,O;P
+Trades,Data,Order,Stocks,USD,CUE,"2018-11-08, 09:30:00",-273,7.76,7.32,2118.48,-1.42502724,-1994.9475,122.107472,120.12,C
+Trades,SubTotal,,Stocks,USD,CUE,,0,,,125.58,-3.47252724,-0,122.107472,169.26,
+Trades,Data,Order,Stocks,USD,FTNW,"2018-11-05, 09:34:38",216,9.25,8.3,-1998,-1.62,1999.62,0,-205.2,O
+Trades,Data,Order,Stocks,USD,FTNW,"2018-11-13, 10:34:29",-216,6.82,6.95,1473.12,-1.12485456,-1999.62,-527.624855,-28.08,C
+Trades,SubTotal,,Stocks,USD,FTNW,,0,,,-524.88,-2.74485456,0,-527.624855,-233.28,
+Trades,Data,Order,Stocks,USD,KNSA,"2018-11-13, 11:07:53",110,18.05,16.25,-1985.5,-1,1986.5,0,-198,O;P
+Trades,SubTotal,,Stocks,USD,KNSA,,110,,,-1985.5,-1,1986.5,0,-198,
+Trades,Data,Order,Stocks,USD,LAZY,"2018-11-13, 11:04:11",200,5.45,5.5,-1090,-1,1091,0,10,O
+Trades,SubTotal,,Stocks,USD,LAZY,,200,,,-1090,-1,1091,0,10,
+Trades,Data,Order,Stocks,USD,LQDA,"2018-11-13, 12:52:27",103,19.35,19.32,-1993.05,-1,1994.05,0,-3.09,O;P
+Trades,SubTotal,,Stocks,USD,LQDA,,103,,,-1993.05,-1,1994.05,0,-3.09,
+Trades,Data,Order,Stocks,USD,MGTA,"2018-11-13, 12:48:38",264,7.55,6.87,-1993.2,-1.32,1994.52,0,-179.52,O
+Trades,SubTotal,,Stocks,USD,MGTA,,264,,,-1993.2,-1.32,1994.52,0,-179.52,
+Trades,Data,Order,Stocks,USD,SIC,"2018-11-13, 12:46:32",232,8.595,8.595,-1994.04,-1.16,1995.2,0,0,O
+Trades,SubTotal,,Stocks,USD,SIC,,232,,,-1994.04,-1.16,1995.2,0,0,
+Trades,Data,Order,Stocks,USD,TBIO,"2018-11-13, 11:04:37",90,6.25,6.29,-562.5,-1,563.5,0,3.6,O
+Trades,SubTotal,,Stocks,USD,TBIO,,90,,,-562.5,-1,563.5,0,3.6,
+Trades,Total,,Stocks,USD,,,,,,-12104.7665,-23.010955875,11618.585,-509.192458,-578.4121, 
+Deposits & Withdrawals,Header,Currency,Settle Date,Description,Amount
+Deposits & Withdrawals,Data,USD,2018-10-30,Electronic Fund Transfer,10000
+Deposits & Withdrawals,Data,USD,2018-11-01,Electronic Fund Transfer,10000
+Deposits & Withdrawals,Data,Total,,,20000
+Fees,Header,Subtitle,Currency,Date,Description,Amount
+Fees,Data,Other Fees,USD,2018-11-02,Balance of Monthly Minimum Fee for Oct 2018,-20
+Fees,Data,Other Fees,USD,2018-11-05,Order Cancellation Fee for Nov 2018,-0.02
+Fees,Data,Other Fees,USD,2018-11-05,y******41:US Equity and Options Add-On Streaming Bundle Non-Professional for Nov 2018,-4.5
+Fees,Data,Other Fees,USD,2018-11-05,y******41:US Securities Snapshot and Futures Value Bundle Non-Professional for Nov 2018,-10
+Fees,Data,Total,,,,-34.52
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Security ID,Multiplier,Code
+Financial Instrument Information,Data,Stocks,ACU,ACME UNITED CORP,764373,,1,
+Financial Instrument Information,Data,Stocks,ALNA,ALLENA PHARMACEUTICALS INC,294729588,,1,
+Financial Instrument Information,Data,Stocks,ALPN,ALPINE IMMUNE SCIENCES INC,283770143,,1,
+Financial Instrument Information,Data,Stocks,BXG,BLUEGREEN VACATIONS CORP,296320248,,1,
+Financial Instrument Information,Data,Stocks,CUE,CUE BIOPHARMA INC,300465612,,1,
+Financial Instrument Information,Data,Stocks,FTNW,FTE NETWORKS INC,295154154,,1,
+Financial Instrument Information,Data,Stocks,KNSA,KINIKSA PHARMACEUTICALS-A,319099329,BMG5269C1010,1,
+Financial Instrument Information,Data,Stocks,LAZY,LAZYDAYS HOLDINGS INC,310624804,,1,
+Financial Instrument Information,Data,Stocks,LQDA,LIQUIDIA TECHNOLOGIES INC,327422071,,1,
+Financial Instrument Information,Data,Stocks,MGTA,MAGENTA THERAPEUTICS INC,322592376,,1,
+Financial Instrument Information,Data,Stocks,SIC,SELECT INTERIOR CONCEPTS-A,329820282,,1,
+Financial Instrument Information,Data,Stocks,TBIO,TRANSLATE BIO INC,324062330,,1,
+Codes,Header,Code,Meaning,Code (Cont.),Meaning (Cont.)
+Codes,Data,A,Assignment
+Codes,Data,AEx,Automatic exercise for dividend-related recommendation.
+Codes,Data,Adj,Adjustment
+Codes,Data,Al,Allocation
+Codes,Data,Aw,Away Trade
+Codes,Data,B,Automatic Buy-in
+Codes,Data,Bo,Direct Borrow
+Codes,Data,C,Closing Trade
+Codes,Data,CD,Cash Delivery
+Codes,Data,CP,Complex Position
+Codes,Data,Ca,Cancelled
+Codes,Data,Co,Corrected Trade
+Codes,Data,Cx,Part or all of this transaction was a Crossing executed as dual agent by IB for two IB customers
+Codes,Data,ETF,ETF Creation/Redemption
+Codes,Data,Ep,Resulted from an Expired Position
+Codes,Data,Ex,Exercise
+Codes,Data,G,Trade in Guaranteed Account Segment
+Codes,Data,HC,Highest Cost tax basis election
+Codes,Data,HFI,Investment Transferred to Hedge Fund
+Codes,Data,HFR,Redemption from Hedge Fund
+Codes,Data,I,Internal Transfer
+Codes,Data,IA,This transaction was executed against an IB affiliate
+Codes,Data,INV,Investment Transfer from Investor
+Codes,Data,IPO,This transaction was executed as part of an IPO in which IB was a member of the selling group and is classified as a Principal trade.
+Codes,Data,L,Ordered by IB (Margin Violation)
+Codes,Data,LD,Adjusted by Loss Disallowed from Wash Sale
+Codes,Data,LI,"Last In, First Out (LIFO) tax basis election"
+Codes,Data,LT,Long Term P/L
+Codes,Data,Lo,Direct Loan
+Codes,Data,M,Entered manually by IB
+Codes,Data,MEx,Manual exercise for dividend-related recommendation.
+Codes,Data,ML,Maximize Losses tax basis election
+Codes,Data,MLG,Maximize Long Term Gain tax basis election
+Codes,Data,MLL,Maximize Long Term Loss tax basis election
+Codes,Data,MSG,Maximize Short Term Gain tax basis election
+Codes,Data,MSL,Maximize Short Term Loss tax basis election
+Codes,Data,O,Opening Trade
+Codes,Data,P,Partial Execution
+Codes,Data,PI,Price Improvement
+Codes,Data,Po,Interest or Dividend Accrual Posting
+Codes,Data,Pr,Part or all of this transaction was executed by the Exchange as a Crossing by IB against an IB affiliate and is therefore classified as a Principal and not an agency trade
+Codes,Data,R,Dividend Reinvestment
+Codes,Data,RED,Redemption to Investor
+Codes,Data,Re,Interest or Dividend Accrual Reversal
+Codes,Data,Ri,Reimbursement
+Codes,Data,SI,This order was solicited by Interactive Brokers
+Codes,Data,SL,Specific Lot tax basis election
+Codes,Data,SO,This order was marked as solicited by your Introducing Broker
+Codes,Data,SS,Customer designated this trade for shortened settlement and so is subject to execution at prices above the prevailing market
+Codes,Data,ST,Short Term P/L
+Codes,Data,SY,Positions that may be eligible for Stock Yield. Potential for additional annualized income of 3.60 USD
+Codes,Data,T,Transfer
+Notes/Legal Notes,Header,Type,Note
+Notes/Legal Notes,Data,Notes,"Most stock exchange transactions settle on the trade date plus two business days. Options, futures and US open-end mutual fund transactions settle on trade date plus one business day. (Some exchanges and other transaction types may have longer or shorter settlement periods.) Ending settled cash reflects the cash that has actually settled."
+Notes/Legal Notes,Data,Notes,Initial and maintenance margin requirements are available within the Account Window of the Trader Workstation.
+Notes/Legal Notes,Data,Notes,"Interactive Brokers LLC receives compensation from fund companies in connection with the purchase and holding of fund shares by customers of Interactive Brokers LLC. Such compensation includes, but is not limited to, Rule 12b-1 fees that are paid out of the funds assets. The source and amount of any remuneration received by Interactive Brokers LLC in connection with a transaction will be furnished upon written request of the customer.  IB may share a portion of the compensation received from fund companies with your financial advisor or introducing broker."
+Notes/Legal Notes,Data,Notes,Quantities preceded by a "-" sign indicate sell transactions. Other transactions are purchases. 
+Notes/Legal Notes,Data,Notes,"In case of partial executions, commissions are charged on the total quantity executed on the original order. The commission is displayed on the first partial execution only."
+Notes/Legal Notes,Data,Notes,Each closed lot indicated above with a reference to note (6) was chosen by the end of the trading day to be sold versus the specific opening purchase identified in that row.
+Notes/Legal Notes,Data,Notes,Trade execution times are displayed in Eastern Time.
+Notes/Legal Notes,Data,Notes,Applicable commodity Regulatory Fees for your transactions are available on the IB website at www.interactivebrokers.com/en/accounts/fees/exchangeAndRegulatoryFees.php.
+Notes/Legal Notes,Data,Notes,"Borrow Fee Rate represents the cost to borrow stock expressed in percent per annum. It is applied to the cash collateral amount on the stock borrow contract and is separate from any interest earned on credit cash balances. Similarly, Loan Fee Rate represents the benefit to lend stock. A positive rate indicates a cost to the borrower/benefit to the lender and a negative rate indicates a benefit to the borrower/cost to the lender. In general, the fee rates for hard-to-borrow stocks are higher than for normal availability stocks."
+Notes/Legal Notes,Data,Notes,Interest Rate on Customer Collateral represents the interest paid on the collateral posted to the customer's account and received from lending stock.  A positive rate indicates a benefit to the lender.
+Notes/Legal Notes,Data,Notes,"The closing prices on this Activity Statement are indicative and may come from third-party sources. Interactive Brokers does not warrant the accuracy of the prices provided by third-party sources. Due to time zone differences, certain non-US mutual funds may deliver closing prices after the Activity Statement has been produced and the closing prices for such funds will reflect the previous day's price."
+Notes/Legal Notes,Data,Notes,"Additional information about your retail Forex transactions is available in Account Management, including information required under NFA Rule 2-36(o) about retail Forex trades in the same currency pair as any retail leveraged Forex transaction you executed in your IB account. We can provide this information for trades executed within the 15 minutes immediately before and after your trade. This information is available for a period of 6 months after your trade."
+Notes/Legal Notes,Data,Fixed Income Notes,"Call features for bonds or preferred stocks may affect the yield. For zero coupon, compound interest and multiplier securities, there are no periodic payments and securities may be callable below maturity value without notice to holder unless registered. For asset-backed securities, the actual yield may vary depending on the speed at which the underlying note is pre-paid. For additional information regarding bond yield, please contact the IB Help Desk at: help@interactivebrokers.com. If this debt security is unrated by a nationally recognized statistical rating organization, it may pose a high risk of default. You should consult a financial advisor to determine whether unrated bonds are appropriate for your portfolio in light of your goals and your financial circumstances. Fees charged by bond trading centers are included in the cost of bond transactions."
+Notes/Legal Notes,Data,Legal Notes,"Please promptly report any inaccuracy or discrepancy in this statement, or in your account. Contact the IB Customer Service Department in writing using the form available on the IB website. You may also contact IB by phone, but if you report an error by phone, you should re-confirm such oral communication in writing in order to protect your rights, including rights under the Securities Investor Protection Act (SIPA).Interactive Brokers LLC, www.interactivebrokers.com, 877-442-2757 (U.S.)Interactive Brokers (UK) (Ltd), www.interactivebrokers.co.uk, 00800-42-276537 (Intl)Interactive Brokers Canada Inc., www.interactivebrokers.ca, 877-745-4222 (Can.)"
+Notes/Legal Notes,Data,Legal Notes,"Unless otherwise noted, Interactive Brokers acted as agent in the execution of the above transactions. For those exchanges where IB is not a direct clearing member or custodian, IB may use one of the following clearing agents or sub-custodians: Interactive Brokers Australia Pty Limited; Interactive Brokers Canada Inc.; Interactive Brokers Hong Kong Limited; Interactive Brokers Securities Japan, Inc.; Interactive Brokers (U.K.) Limited; Timber Hill Europe AG; ABN Amro Clearing Singapore Pte. Ltd.; ABN Amro Clearing Sydney Pty Ltd.; BBVA Bancomer, S.A.; BNP Securities Services, Milan Branch; BMO Harris Bank N.A.; Citibank International plc; Euroclear Bank S.A./N.V.; Shinhan Securities Co., Ltd.; Skandinaviska Enskilda Banken AB.; Skandinaviska Enskilda Merchang Banking, Oslo Branch"
+Notes/Legal Notes,Data,Legal Notes,"IB acts as agent or riskless principal in foreign currency exchange transactions.  Such transactions are executed against an IB affiliate or a third party, which acts as principal in such transactions and may have a long or short position and may have profited or lost in connection with the transaction.  Foreign currency exchange transactions executed by Customer through IB are not regulated or overseen by the SEC or the CFTC."
+Notes/Legal Notes,Data,Legal Notes,"Trades marked with the exchange indicator of TMBR were effected by IB as agent through a market making affiliate, which acted as principal in the transaction and may have a long or short position in the security and may have profited or lost in connection with the transaction."
+Notes/Legal Notes,Data,Legal Notes,"All VWAP trades are effected pursuant to an average price formula based on a reference price provided by a third-party data provider. Additional information and reference prices are available upon request. IB, as agent, effects VWAP transactions through a market making affiliate, which acts as principal in such transactions and may have a long or short position in the security and may have profited or lost in connection with the transaction."
+Notes/Legal Notes,Data,Legal Notes,"IB accepts liquidity rebates or other order flow payments from Alternative Trading Systems, market makers and exchanges for certain orders in stocks. IB receives payment for some option orders pursuant to exchange-mandated marketing fee programs or other arrangements. To the extent permissible under exchange rules, IB may direct customer option orders for execution against its market making affiliate Timber Hill LLC, which acts as principal and may earn a profit or incur a loss. The source and nature of any compensation received by IB in connection with any transaction is available upon written request of the customer. For further information, check the IB website and the Order Routing and Payment for Order Flow Disclosure provided when you opened your account and annually or email help@interactivebrokers.com."
+Notes/Legal Notes,Data,Legal Notes,"For security futures trades, if not already indicated on this statement, information about the time of any transaction, the identity of the counterparty to the transaction, and whether IB is acting as agent or principal, as agent for the counterparty, as agent for both parties to the contract, or as principal, and if acting as principal, whether the transaction was a block transaction or an exchange for physicals transaction, will be available upon written request of the customer."
+Notes/Legal Notes,Data,Legal Notes,Customer is requested to promptly advise Interactive Brokers of any material change in Customer's investment objectives or financial situation.
+Notes/Legal Notes,Data,Legal Notes,"A financial statement of Interactive Brokers LLC is available for your personal inspection at www.interactivebrokers.com or at its offices, or a copy of it will be mailed upon your written request."
+Notes/Legal Notes,Data,Legal Notes,"For trades executed on either the Australian Stock Exchange Ltd (""ASX"") or Chi-X Australia Pty Ltd (""Chi-X""), this confirmation is issued subject to: (i) the directions, decisions and requirements of the Market Operator, the relevant Market Integrity Rules, the relevant Market Operating Rules, the Clearing Rules and where relevant, the Settlement Rules; (ii) the customs and usages of the relevant Market; and (iii) the correction of errors and omissions. Interactive Brokers LLC (ARBN: 091191141, AFSL: 245574, Participant on Chi-X Australia)(""IB"") is not a participant on the ASX, and will route orders to the ASX through its affiliate, Timber Hill Australia Pty Ltd (ABN 25079993534, AFSL: 244380, Participant on the ASX)(""THA"") who executes such orders. Your ASX and Chi-x Australia trades will be cleared through ABN Amro Clearing Sydney Pty Ltd, an ACH participant. If your transaction was a crossing transaction, IB may have either acted on behalf of (i) both the buyer and seller of this transaction, or (ii) on behalf of the buyer or seller on one side of the transaction and act as Principal on the other side. Under the Corporations Act 2001, where IB enters into an exchange traded derivatives on a customer's behalf, IB is regarded as having issued the derivative to the customer."
+Notes/Legal Notes,Data,Legal Notes,"For All Options Trades Executed on the Stock Exchange of Hong Kong (""SEHK""): (a) Options can involve a high degree of risk and may not be suitable for every investor. Investors should ensure they understand those risks before participating in the options market. (b) All options contracts executed on the SEHK were executed by Timber Hill Securities Hong Kong on behalf of Interactive Brokers LLC. (c) In the event of a default committed by Interactive Brokers LLC resulting in the client suffering any pecuniary loss, the client shall have a right to claim under the Investor Compensation Fund established under the Hong Kong Securities and Futures Ordinance, subject to the terms of the Investor Compensation Fund from time to time. (d) All Exchange Traded Options Business made for or on behalf of a client shall be subject to the relevant provisions of the constitution, Rules of The Stock Exchange of Hong Kong Limited (""SEHK Rules""), regulations, the Articles, customs and usages of SEHK, the Options Trading Rules, the Clearing Rules of SEOCH, the CCASS Rules and the laws of Hong Kong, which shall be binding on both Interactive Brokers LLC and the client."
+Notes/Legal Notes,Data,Legal Notes,"Deposits held away from Interactive Brokers LLC may not qualify under SIPC protection.  Also, futures and options on futures are not covered by SIPC."
+Notes/Legal Notes,Data,,SIPC Member

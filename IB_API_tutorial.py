@@ -377,6 +377,9 @@ class TestWrapper(EWrapper):
 
     def updateAccountTime(self, timeStamp:str):
 
+        #TODO: Not sure why this method was not recognizing accountName variable, where in RobCarver's example it is. Manually inputting here for now, but will cause issues if doing this for another account.
+        accountName = 'U9509931'
+
         ## use this to seperate out different account data
         data = identifed_as(ACCOUNT_TIME_FLAG, timeStamp)
         self._my_accounts[accountName].put(data)
@@ -392,7 +395,6 @@ class TestWrapper(EWrapper):
         except ValueError:
             return False
     
-
 class TestClient(EClient):
     """
     The client method
@@ -695,7 +697,10 @@ class TestClient(EClient):
 
             c = []
             for i, row in b.iterrows():
-                c.append(row.contract.__dict__)
+                try:
+                    c.append(row.contract.__dict__)
+                except AttributeError:
+                    print('Row {} could not be added\nRow: {}'.format(i, row))
             d = pd.DataFrame(c)
 
             e = pd.concat([b,d], axis=1)
@@ -992,11 +997,6 @@ class TestApp(TestWrapper, TestClient):
         TestWrapper.__init__(self)
         TestClient.__init__(self, wrapper=self)
 
-        self.connect(ipaddress, portid, clientid)
-        self.init_error()
-        thread = Thread(target = self.run)
-        thread.start()
-
         self.port = 7496
         self.ip = "127.0.0.1"
         self.clientID = 1
@@ -1013,10 +1013,21 @@ class TestApp(TestWrapper, TestClient):
         self.fireSaleAge = 6
 
         # Local file addresses
-        self.csvAddress_stocks_to_trade = "/Users/chingaling/Documents/Algo Trading/BroCodePC/stocks_to_trade.csv"
-        self.csvAddress_orders = "/Users/chingaling/Documents/Algo Trading/BroCodePC/orders.csv"
+        self.csvAdd_stocks_to_trade = "/Users/chingaling/Documents/Algo Trading/BroCodePC/stocks_to_trade.csv"
+        self.csvAdd_orders = "/Users/chingaling/Documents/Algo Trading/BroCodePC/orders.csv"
+        self.csvAdd_exec = "/Users/chingaling/Documents/Algo Trading/BroCodePC/executions.csv"
         self.pklAdd_orders = "/Users/chingaling/Documents/Algo Trading/BroCodePC/orders.pkl"
         self.pklAdd_exec = "/Users/chingaling/Documents/Algo Trading/BroCodePC/executions.pkl"
+
+        # Connect to IB API
+        ipaddress = self.ip
+        portid = self.port
+        clientid = self.clientID
+
+        self.connect(ipaddress, portid, clientid)
+        self.init_error()
+        thread = Thread(target = self.run)
+        thread.start()
 
         setattr(self, "_thread", thread)
     
@@ -1055,8 +1066,14 @@ class TestApp(TestWrapper, TestClient):
 
     # Logging order entry
     def add_order_entry(self, orderid):
-        # Add a new log entry (somewhere, either CSV, cloud database, etc.) keeping track of all order detail
         
+        '''
+        Add a new log entry (somewhere, either CSV, cloud database, etc.) 
+        keeping track of all order detail
+
+        Returns: Nothing
+        '''
+
         # Get open orders
         open_orders = self.get_open_orders_pd()
         
@@ -1071,6 +1088,7 @@ class TestApp(TestWrapper, TestClient):
 
             # Save latest stData to pickle file and csv locally
             order_pd.to_pickle(self.pklAdd_orders)
+            order_pd.to_csv(self.csvAdd_orders)
         else:
             print("Orderid {} not in open_orders".format(orderid))
 
@@ -1110,6 +1128,7 @@ class TestApp(TestWrapper, TestClient):
             l = {}
             for j, row in i.iterrows():
                 l[j] = datetime.datetime.strptime(row.time, '%Y%m%d  %H:%M:%S')
+                l[j] = l[j].replace(tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
             k = pd.Series(l, index=l.keys(), name='dttime')
 
             executions_pd = pd.concat([i, k], axis=1)
@@ -1128,9 +1147,10 @@ class TestApp(TestWrapper, TestClient):
         if not executions_pd_new.empty:
             executions_pd = pd.read_pickle(self.pklAdd_exec)
             a = pd.concat([executions_pd,executions_pd_new])
-            b = a.drop_duplicates(subset=['AvgPrice','OrderId','symbol', 'time'], keep='last')
+            b = a.drop_duplicates(subset=['id'], keep='last')
             updated_executions_pd = b.reset_index(drop=True)
             updated_executions_pd.to_pickle(self.pklAdd_exec)
+            updated_executions_pd.to_csv(self.csvAdd_exec)
         else:
             updated_executions_pd = pd.read_pickle(self.pklAdd_exec)
         
@@ -1157,7 +1177,7 @@ class TestApp(TestWrapper, TestClient):
     def generate_stock_shortlist(self):
 
         # Return list of stocks to trade for the day
-        self.stock_list = list(pd.read_csv(self.csvAddress_stocks_to_trade).Stocks)
+        self.stock_list = list(pd.read_csv(self.csvAdd_stocks_to_trade).Stocks)
         self.nextStock = cycle(self.stock_list)
 
     def create_resolved_ibcontract(self, stock_to_trade):
@@ -1181,8 +1201,17 @@ class TestApp(TestWrapper, TestClient):
         market_data1_as_df = market_data1.as_pdDataFrame()
         some_quotes = market_data1_as_df.resample("1S").last()[["last_trade_price"]]
         current_price = some_quotes.iloc[0][0]
-        print('Current price: {}'.format(current_price))
+        if np.isnan(current_price):
+            print('Could not get latest_trade_price. Getting historical closing price')
+            b = self.get_IB_historical_data(resolved_ibcontract, durationStr='1 D')
+            if b:
+                c = pd.DataFrame(b, columns=['date', 'open', 'high', 'low', 'close', 'volume'])
+                current_price = c.close.loc[0]
+            else:
+                print('Did not receive historical data. Setting current_price as nan')
+                current_price = np.nan
         
+        print('Current price: {}'.format(current_price))
         return current_price
     
     def rebalance_sell_order(self, position_series):
@@ -1200,22 +1229,9 @@ class TestApp(TestWrapper, TestClient):
         
         stock = position_series.symbol
         today = datetime.datetime.now()
-
-        #TODO: Need to bring these 2 conditions before we look up contract details and CurrPrice, since they don't require this information. These variables take a few seconds to load.
-        # If the symbol is 'USD' - pass. We don't want to trade our cash
-        if position_series.symbol == 'USD':
-            orderid = None
-            pass
-        
-        # If the position is held for less than 2 business days, don't sell it.
-        #TODO: Need to double check the BDay logic holds given the timezone naive datetime objects. Since trading hours extend into midnight China time, this might affect the logic here.
-        elif (position_series.bought_datetime + BDay(2) > today):
-            orderid = None
-            print('Position held for less than 2 days. Skipping')
-            pass
         
         # If we're past the fireSaleAge, and the CurrPrice is below the fireSalePrice or the CostBasis is higher than the CurrPrice, then place a sell order
-        elif (
+        if (
             position_series.bought_datetime + BDay(self.fireSaleAge) < today 
             and (
                 self.fireSalePrice>CurrPrice
@@ -1247,22 +1263,34 @@ class TestApp(TestWrapper, TestClient):
         # Review if limit sell order exists for every position    
         for i, position in positions.iterrows():
             
+            today = datetime.datetime.now()
             print('Considering placing sell order for {}'.format(position.symbol))
-            # If the stock already has an existing limit sell order, pass. 
+
+            # If the stock already has an existing limit sell order, continue to next stock. 
             #TODO: Check to make sure existing sell order is exact match (ie shares, limit price, what happens to updated limit price?, etc.)
             if 'symbol' in open_sell_orders.columns:
                 if open_sell_orders.symbol.isin([position.symbol]).any():
                     print('Existing sell order in place. Skipping')
-                    pass
+                    continue
             
             # If position in stock is 0, skip. Sometimes these will remain in our positions table for a day
             if position.position == 0:
-                print('Do not have a position')
+                print('Do not have a position. Skipping')
+                continue
+
+            # If it's the USD position, skip it
+            elif position.symbol == 'USD':
+                print('USD is a cash position. Not for sale')
                 pass
+            
+            # If the position is less than 2 days old, skip it
+            #TODO: Need to double check the BDay logic holds given the timezone naive datetime objects. Since trading hours extend into midnight China time, this might affect the logic here.
+            elif (position.bought_datetime + BDay(2) > today):
+                print('Position held for less than 2 days. Skipping')
+            
             else:
                 orderid = self.rebalance_sell_order(position)
 
-    
     def cancel_all_open_buy_orders(self, minutes=0):
     
         # Cancel all outstanding buy orders
@@ -1278,6 +1306,177 @@ class TestApp(TestWrapper, TestClient):
         else:
             print('open_orders did not have the action column, likely DataFrame is empty')
 
+    def submit_buy_order(self, stock_to_trade):
+
+        '''
+        Submits a limit buy order, automatically calculating shares and price based on global parameters
+        '''
+        # TODO: Need to stop this round if the resolved_ibcontract could not be found.
+        resolved_ibcontract = self.create_resolved_ibcontract(stock_to_trade)
+        PH = self.get_IB_historical_data(resolved_ibcontract, durationStr='20 D')
+        PH_df = pd.DataFrame(PH, columns=['date', 'open', 'high', 'low', 'close', 'volume'])
+        PH_Avg = float(PH_df.close.mean())
+        current_price = float(self.get_latest_price(resolved_ibcontract))
+        
+        # If can't retrieve current price, skip it for now
+        if np.isnan(current_price):
+            print('Could not get current price. Skipping for now') 
+        else:
+            
+            # If there's a large 25% surge in price, buy it at current price
+            if current_price > float(1.25*PH_Avg):
+                buyPrice=float(current_price)
+            else:
+                buyPrice=float(current_price*self.buyFactor)
+            buyPrice=float(make_div_by_05(buyPrice, buy=True))
+            StockShares = int(self.minInvSize/buyPrice)
+            print("Buying {}, \tshares: {}, \tprice: {}".format(stock_to_trade, StockShares, buyPrice))
+
+            # Submit the buy order and log the order
+            orderid = self.submit_order(resolved_ibcontract=resolved_ibcontract, action="BUY", shares=StockShares, price=buyPrice, order_type="LMT", orderid=None, tif="GTC")
+            self.add_order_entry(orderid)
+
+    def rebalance_buy_orders(self):
+        
+        '''
+        Loops through a maximum of `maxBuyOrdersAtOnce` to buy new stock from our stock list
+        Will need to initiate self.nextStock first with self.generate_stock_shortlist()
+
+        Returns: Nothing
+        '''
+        
+        # TODO: Keep getting errors when calling this function. Need to fix.
+        #buying_power = self.get_buying_power()
+        buying_power = 100000
+        
+        # Loops through for a max of maxBuyOrdersAtOnce
+        # Will stop once buying_power is less than minInvSize
+        for i in range(self.maxBuyOrdersAtOnce):
+            print('{}\tBuying_power: {}'.format(i,buying_power))
+            
+            # If we don't have enough buying_power, stop buying
+            if buying_power < self.minInvSize:
+                print('buying_power ({}) less than minInvSize ({})'.format(buying_power, minInvSize))
+                break
+            
+            # Get next stock to trade
+            stock_to_trade = next(self.nextStock)
+            print("Considering trading this stock: {}".format(stock_to_trade))
+
+            # Get an update on our current situation to assess if we'll buy this stock
+            positions = self.get_current_positions()
+            open_orders = self.get_open_orders_pd()
+            updated_executions_pd = self.get_latest_executions()
+            todays_executions = updated_executions_pd[datetime.datetime.now(tz=datetime.timezone(datetime.timedelta(hours=8))) - updated_executions_pd.dttime < datetime.timedelta(days=1)]
+
+            # Check if there is an existing buy order...
+            #TODO: Check if this is actually a criteria in the Quantopian model
+            cond1 = positions.symbol.isin([stock_to_trade]).any()
+            
+            # ...or if stock is already in portfolio
+            cond2 = open_orders[open_orders.action == 'BUY'].symbol.isin([stock_to_trade]).any()
+            
+            # ...or if it was recently traded
+            cond3 = todays_executions.symbol.isin([stock_to_trade]).any()
+            
+            # If any of the above 3 conditions are true, don't trade this stock
+            if cond1 or cond2 or cond3:
+                print('Wont trade this {}\nIn positions?: {}\tIn open_orders?: {}\tTraded today?: {}'.format(stock_to_trade, cond1, cond2, cond3))
+            else:
+                self.submit_buy_order(stock_to_trade)
+
+            # Update our buying_power
+            # TODO: Keep getting errors when calling this function. Need to fix.
+            #buying_power = self.get_buying_power()
+
+    def get_available_funds(self):
+        '''
+        Retrieves the amount of funds available to use for limit buy orders
+        
+        Returns: Float
+        '''
+        positions_list = self.get_current_positions()
+        accountName = positions_list.account[0]
+        accounting_values = self.get_accounting_values(accountName)
+        a = pd.DataFrame(accounting_values, columns=['desc', 'amount', 'curr'])
+        a.set_index(keys='desc', inplace=True)
+        return float(a.loc['AvailableFunds-S'].amount)
+
+    def get_total_buy_order_value(self):
+        '''
+        Retrieves current buy orders and calculates how much in value they add up to
+        
+        Return: float
+        '''
+        
+        # TODO: Check with IB hotline if we can make more buy limit orders 
+        # than our available funds allow for
+        a = self.get_open_orders_pd()
+        a = a[a.action == 'BUY']
+        return sum(a.lmtPrice * a.totalQuantity)
+
+    def get_buying_power(self):
+        available_funds = self.get_available_funds()
+        buy_order_value = self.get_total_buy_order_value()
+        buying_power = available_funds - buy_order_value
+        
+        return buying_power
+
+    def rebalance(self):
+        
+        '''
+        Re-balancing method from 30_stock algo every 10 minutes. 
+        Buy order cycles through list of 100 stock selected each day.
+        '''
+
+        # Close out all outstanding buy orders that were not fulfilled. Should be most of them
+        self.cancel_all_open_buy_orders(minutes=0)
+
+        # Create new sell orders as per algo strategy
+        self.rebalance_all_sell_orders()
+
+        # Submit new buy orders
+        self.maxBuyOrdersAtOnce = 15
+        self.rebalance_buy_orders()
+
+    def main_trading(self):
+        '''
+        All of the code to run throughout the trading day
+        '''
+
+        #Before trading day starts, load up list of stock candidates
+        self.stock_list = self.generate_stock_shortlist()
+
+        # Start fresh and cancel all orders
+        self.cancel_all_orders()
+
+        # Calculate trading time
+        trading_market_tz = datetime.timezone(-datetime.timedelta(hours=5))
+        end_trading_day = datetime.time(hour=16, tzinfo=trading_market_tz)
+        now = datetime.datetime.now()
+        now = now.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
+        end_trading_time = datetime.datetime.combine(now.date(), end_trading_day)
+        while (now < end_trading_time):
+            
+            # In case there's a leftover connection, disconnect from that
+            self.disconnect()
+
+            # Connect to IB API
+            self.__init__(self.ip, self.port, self.clientID)
+
+            # Submit fresh buy and sell orders based on our algo rules
+            self.rebalance()
+            
+            # After done rebalancing, disconnect and wait for `rebalance_interval`
+            self.disconnect()
+
+            # Wait for the rebalance_interval time (in minutes)
+            time.sleep(self.rebalance_interval * 60)
+
+            # Reset current time `now`
+            now = datetime.datetime.now()
+            now = now.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
+            
 class finishableQueue(object):
     """
     Creates a queue which will finish at some point
