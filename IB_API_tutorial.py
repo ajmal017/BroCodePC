@@ -26,6 +26,7 @@ from ibapi.execution import ExecutionFilter
 from threading import Thread
 import queue
 import datetime
+import pytz
 import time
 import pandas as pd
 from pandas.tseries.offsets import BDay
@@ -378,11 +379,12 @@ class TestWrapper(EWrapper):
     def updateAccountTime(self, timeStamp:str):
 
         #TODO: Not sure why this method was not recognizing accountName variable, where in RobCarver's example it is. Manually inputting here for now, but will cause issues if doing this for another account.
-        accountName = 'U9509931'
 
         ## use this to seperate out different account data
         data = identifed_as(ACCOUNT_TIME_FLAG, timeStamp)
-        self._my_accounts[accountName].put(data)
+
+        # Note: Updated to self.accountName (from accountName) because it was not recognizing the local variable for some reason
+        self._my_accounts[self.accountName].put(data)
 
     def accountDownloadEnd(self, accountName:str):
 
@@ -1005,12 +1007,14 @@ class TestApp(TestWrapper, TestClient):
         self.rebalance_interval = 10
         self.maxBuyOrdersAtOnce = 30
         self.minInvSize = 1000
+        self.min_cushion = 500
         self.stock_list = []
         self.maxCandidates=100
         self.leastPrice=3.00
         self.mostPrice=20.00
         self.fireSalePrice = self.leastPrice
         self.fireSaleAge = 6
+        self.accountName = 'U9509931'
 
         # Local file addresses
         self.csvAdd_stocks_to_trade = "/Users/chingaling/Documents/Algo Trading/BroCodePC/stocks_to_trade.csv"
@@ -1081,7 +1085,14 @@ class TestApp(TestWrapper, TestClient):
             order_pd_base = pd.read_pickle(self.pklAdd_orders)
             a = open_orders[open_orders.id == orderid]
 
-            b = a.assign(time_added=datetime.datetime.now())
+            # Create datetime object in Shanghai timezone
+            cn_tz = pytz.timezone('Asia/Shanghai')
+            now = datetime.datetime.now()
+            now = cn_tz.localize(now)
+            utc = pytz.utc
+            now = now.astimezone(utc)
+            b = a.assign(time_added=now)
+
             order_pd = pd.concat([order_pd_base, b])
             order_pd.drop_duplicates(subset=['permid','conId'], inplace=True)
             order_pd.reset_index(drop=True, inplace=True)
@@ -1128,7 +1139,15 @@ class TestApp(TestWrapper, TestClient):
             l = {}
             for j, row in i.iterrows():
                 l[j] = datetime.datetime.strptime(row.time, '%Y%m%d  %H:%M:%S')
-                l[j] = l[j].replace(tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
+
+                # Recognize time as UTC+8
+                cn_tz = pytz.timezone('Asia/Shanghai')
+                l[j] = cn_tz.localize(l[j])
+                utc = pytz.utc
+                l[j] = l[j].astimezone(utc)
+
+                #TODO: Delete line below if this method runs smoothly
+                # l[j] = l[j].replace(tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
             k = pd.Series(l, index=l.keys(), name='dttime')
 
             executions_pd = pd.concat([i, k], axis=1)
@@ -1297,11 +1316,18 @@ class TestApp(TestWrapper, TestClient):
         open_orders = self.get_open_orders_pd()
         if 'action' in open_orders.columns:
             open_orders = open_orders[open_orders.action == 'BUY']
-            open_orders = open_orders[datetime.datetime.now() - open_orders.time_added > datetime.timedelta(minutes=minutes)]
+
+            # Create now datetime object in Shanghai timezone
+            cn_tz = pytz.timezone('Asia/Shanghai')
+            now = datetime.datetime.now()
+            now = cn_tz.localize(now)
+            utc = pytz.utc
+            now = now.astimezone(utc)
+
+            open_orders = open_orders[now - open_orders.time_added > datetime.timedelta(minutes=minutes)]
             for _, order in open_orders.iterrows():
                 if order.action == "BUY":
-                    print("Cancelling this order: {}".format(order))
-                    print(order.orderId)
+                    print("Cancelling this order: {}".format(order.symbol))
                     self.cancel_order(order.orderId)
         else:
             print('open_orders did not have the action column, likely DataFrame is empty')
@@ -1339,35 +1365,45 @@ class TestApp(TestWrapper, TestClient):
     def rebalance_buy_orders(self):
         
         '''
-        Loops through a maximum of `maxBuyOrdersAtOnce` to buy new stock from our stock list
+        Submits a number of new buy orders using stock from our stock list
         Will need to initiate self.nextStock first with self.generate_stock_shortlist()
 
         Returns: Nothing
         '''
         
-        # TODO: Keep getting errors when calling this function. Need to fix.
-        #buying_power = self.get_buying_power()
-        buying_power = 100000
+        # Find out how much avaible funds for trading we have
+        a = self.get_available_funds()
         
-        # Loops through for a max of maxBuyOrdersAtOnce
-        # Will stop once buying_power is less than minInvSize
-        for i in range(self.maxBuyOrdersAtOnce):
-            print('{}\tBuying_power: {}'.format(i,buying_power))
-            
-            # If we don't have enough buying_power, stop buying
-            if buying_power < self.minInvSize:
-                print('buying_power ({}) less than minInvSize ({})'.format(buying_power, minInvSize))
-                break
+        # Allow for a small cushion, for margin call purposes
+        b = a - self.min_cushion
+
+        # d = number of buy orders we can submit this round
+        c = b / self.minInvSize 
+        d = math.floor(c)
+        print('Will attempt {} buy orders this round'.format(d))
+
+        # Get an update on our current situation to assess if we'll buy this stock
+        positions = self.get_current_positions()
+        open_orders = self.get_open_orders_pd()
+        updated_executions_pd = self.get_latest_executions()
+
+        # Loops through number of buy orders we can submit
+        buy_orders_submitted = 0
+        while buy_orders_submitted < d:
+        # for i in range(d):
             
             # Get next stock to trade
             stock_to_trade = next(self.nextStock)
             print("Considering trading this stock: {}".format(stock_to_trade))
 
-            # Get an update on our current situation to assess if we'll buy this stock
-            positions = self.get_current_positions()
-            open_orders = self.get_open_orders_pd()
-            updated_executions_pd = self.get_latest_executions()
-            todays_executions = updated_executions_pd[datetime.datetime.now(tz=datetime.timezone(datetime.timedelta(hours=8))) - updated_executions_pd.dttime < datetime.timedelta(days=1)]
+            # Create now datetime object in Shanghai timezone
+            cn_tz = pytz.timezone('Asia/Shanghai')
+            now = datetime.datetime.now()
+            now = cn_tz.localize(now)
+            utc = pytz.utc
+            now = now.astimezone(utc)
+
+            todays_executions = updated_executions_pd[now - updated_executions_pd.dttime < datetime.timedelta(days=1)]
 
             # Check if there is an existing buy order...
             #TODO: Check if this is actually a criteria in the Quantopian model
@@ -1384,10 +1420,7 @@ class TestApp(TestWrapper, TestClient):
                 print('Wont trade this {}\nIn positions?: {}\tIn open_orders?: {}\tTraded today?: {}'.format(stock_to_trade, cond1, cond2, cond3))
             else:
                 self.submit_buy_order(stock_to_trade)
-
-            # Update our buying_power
-            # TODO: Keep getting errors when calling this function. Need to fix.
-            #buying_power = self.get_buying_power()
+                buy_orders_submitted += 1
 
     def get_available_funds(self):
         '''
@@ -1395,9 +1428,8 @@ class TestApp(TestWrapper, TestClient):
         
         Returns: Float
         '''
-        positions_list = self.get_current_positions()
-        accountName = positions_list.account[0]
-        accounting_values = self.get_accounting_values(accountName)
+
+        accounting_values = self.get_accounting_values(self.accountName)
         a = pd.DataFrame(accounting_values, columns=['desc', 'amount', 'curr'])
         a.set_index(keys='desc', inplace=True)
         return float(a.loc['AvailableFunds-S'].amount)
@@ -1450,12 +1482,20 @@ class TestApp(TestWrapper, TestClient):
         # Start fresh and cancel all orders
         self.cancel_all_orders()
 
-        # Calculate trading time
-        trading_market_tz = datetime.timezone(-datetime.timedelta(hours=5))
-        end_trading_day = datetime.time(hour=16, tzinfo=trading_market_tz)
+        # Create now datetime object in Shanghai timezone
+        cn_tz = pytz.timezone('Asia/Shanghai')
         now = datetime.datetime.now()
-        now = now.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
-        end_trading_time = datetime.datetime.combine(now.date(), end_trading_day)
+        now = cn_tz.localize(now)
+        utc = pytz.utc
+        now = now.astimezone(utc)
+
+        # Create end of trading time in NY timezone
+        ny_tz = pytz.timezone('America/New_York')
+        end_trading_time = datetime.time(hour=16, tzinfo=ny_tz)
+        end_trading_time = datetime.datetime.combine(now.date(), end_trading_time)
+        end_trading_time = end_trading_time.astimezone(utc)
+
+        # Let the program run throughout the trading day
         while (now < end_trading_time):
             
             # In case there's a leftover connection, disconnect from that
@@ -1471,11 +1511,17 @@ class TestApp(TestWrapper, TestClient):
             self.disconnect()
 
             # Wait for the rebalance_interval time (in minutes)
-            time.sleep(self.rebalance_interval * 60)
+            print('{}:\tFinished rebalancing. Will wait for {} minutes. '.format(datetime.datetime.now(), self.rebalance_interval))
+            countdown(self.rebalance_interval * 60)
+            # time.sleep(self.rebalance_interval * 60)
 
             # Reset current time `now`
             now = datetime.datetime.now()
-            now = now.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
+            now = cn_tz.localize(now)
+            now = now.astimezone(utc)
+        
+        # After markets closed, close all buy orders
+        self.cancel_all_open_buy_orders()
             
 class finishableQueue(object):
     """
@@ -1946,3 +1992,11 @@ def make_div_by_05(s, buy=False):
     s =  math.floor(s) if buy else math.ceil(s)
     s /= 20.00
     return s
+
+def countdown(t):
+    while t:
+        mins, secs = divmod(t, 60)
+        timeformat = '{:02d}:{:02d}'.format(mins, secs)
+        print(timeformat, end='\r')
+        time.sleep(1)
+        t -= 1
